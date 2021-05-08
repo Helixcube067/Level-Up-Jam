@@ -70,7 +70,7 @@ public class CharacterScript : MonoBehaviour
 
     void handleTemperature()
     {
-        if (Input.GetButtonDown("TemperatureUp")) // default key set to W
+        if(Input.GetButtonDown("TemperatureUp")) // default key set to W
         {
             _BodyTemperature += 1;
             _BodyTemperatureText.text = _BodyTemperature.ToString();
