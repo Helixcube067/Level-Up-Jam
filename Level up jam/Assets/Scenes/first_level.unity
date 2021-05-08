@@ -290,7 +290,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a220778f60854ac48a2243ad2c268adc, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -392,7 +392,7 @@ SpriteRenderer:
   m_SortingLayerID: -853311759
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 47089bb73cbd43d4386ee0512638f528, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a280c2682155bc45a144d1720396379, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -411,11 +411,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387151725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.34, y: -1.24, z: 0}
+  m_LocalPosition: {x: -4.34, y: -0.94, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &387151729
 PolygonCollider2D:
@@ -434,7 +434,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -442,10 +442,53 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.16, y: 0.16}
-      - {x: -0.16, y: -0.16}
-      - {x: 0.16, y: -0.16}
-      - {x: 0.16, y: 0.16}
+    - - {x: 0.22999999, y: -0.44}
+      - {x: 0.31, y: -0.42}
+      - {x: 0.35999998, y: -0.28}
+      - {x: 0.35999998, y: -0.01}
+      - {x: 0.34, y: 0.089999996}
+      - {x: 0.14, y: 0.19999999}
+      - {x: 0.13, y: 0.45}
+      - {x: 0.089999996, y: 0.53}
+      - {x: 0.06, y: 0.53999996}
+      - {x: 0.02, y: 0.53999996}
+      - {x: 0, y: 0.52}
+      - {x: 0, y: 0.44}
+      - {x: 0.02, y: 0.42}
+      - {x: 0, y: 0.42}
+      - {x: 0, y: 0.44}
+      - {x: -0.02, y: 0.45999998}
+      - {x: -0.04, y: 0.52}
+      - {x: -0.06, y: 0.53999996}
+      - {x: -0.099999994, y: 0.53999996}
+      - {x: -0.12, y: 0.52}
+      - {x: -0.13, y: 0.42999998}
+      - {x: -0.089999996, y: 0.41}
+      - {x: -0.12, y: 0.32}
+      - {x: -0.12, y: 0.26}
+      - {x: -0.12, y: 0.35999998}
+      - {x: -0.14, y: 0.38}
+      - {x: -0.17999999, y: 0.41}
+      - {x: -0.26999998, y: 0.42999998}
+      - {x: -0.28, y: 0.39999998}
+      - {x: -0.28, y: 0.28}
+      - {x: -0.25, y: 0.22999999}
+      - {x: -0.21, y: 0.19}
+      - {x: -0.32, y: 0.02}
+      - {x: -0.32, y: -0.12}
+      - {x: -0.29999998, y: -0.21}
+      - {x: -0.17999999, y: -0.32}
+      - {x: -0.17, y: -0.53}
+      - {x: -0.12, y: -0.64}
+      - {x: -0.04, y: -0.64}
+      - {x: -0.01, y: -0.58}
+      - {x: 0.04, y: -0.64}
+      - {x: 0.14, y: -0.64}
+    - - {x: -0.04, y: 0.26}
+      - {x: -0.049999997, y: 0.24}
+      - {x: 0.06, y: 0.13}
+      - {x: 0.08, y: 0.14}
+      - {x: -0.03, y: 0.14999999}
 --- !u!114 &387151730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,6 +506,7 @@ MonoBehaviour:
   _Floor:
     serializedVersion: 2
     m_Bits: 8
+  _InitialBodyTemperature: 0
 --- !u!1 &516891524
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +641,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -301.7, y: 213}
+  m_AnchoredPosition: {x: -244.3, y: 213}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &828697158
@@ -621,7 +665,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: a220778f60854ac48a2243ad2c268adc, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -922,7 +966,7 @@ Transform:
   - {fileID: 29825858}
   - {fileID: 1244152185}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1642199178
 GameObject:

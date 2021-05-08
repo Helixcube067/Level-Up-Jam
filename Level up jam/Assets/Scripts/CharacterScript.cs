@@ -41,6 +41,15 @@ public class CharacterScript : MonoBehaviour
         float HorizontalMovement = Input.GetAxisRaw("Horizontal") * _MovementSpeed * Time.deltaTime; // Horizontal axis controlled by A and D
         Vector2 Movement = new Vector2(HorizontalMovement, _RigidBody.velocity.y);
         _RigidBody.velocity = Vector2.Lerp(_RigidBody.velocity, Movement, _SmoothMovement); // Smooths stopping/starting movement
+        if(_RigidBody.velocity.x > 0.1)
+        {
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if(_RigidBody.velocity.x < -0.1)
+        {
+            _RigidBody.transform.localScale = new Vector3(-1, 1, 1);
+        }
+        _RigidBody.rotation = 0;
 
         // Make it impossible to walk back outside camera view
         float CameraHorizontalHalfSize = Camera.main.orthographicSize * Screen.width / Screen.height;
