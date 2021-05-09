@@ -81,4 +81,8 @@ public class CharacterScript : MonoBehaviour
             _BodyTemperatureText.text = _BodyTemperature.ToString();
         }
     }
+
+    public float GetBodyTemp() {
+        return _BodyTemperature;
+    }
 }
