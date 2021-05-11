@@ -16,6 +16,8 @@ public class CharacterScript : MonoBehaviour
     PolygonCollider2D _Collider;
     float _BodyTemperature;
     Text _BodyTemperatureText;
+    float _FootstepTimer;
+    bool _PlayingFootstep;
 
     // Start is called before the first frame update
     void Start()
@@ -25,29 +27,35 @@ public class CharacterScript : MonoBehaviour
         _Collider = GetComponent<PolygonCollider2D>();
         _BodyTemperatureText = GameObject.Find("TemperatureValue").GetComponent<Text>();
         _BodyTemperatureText.text = _BodyTemperature.ToString();
-        //_rigidbody.isKinematic = true;
+        _FootstepTimer = 0.0f;
+        _PlayingFootstep = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
-        }
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
-        }
         handleMovement();
         handleTemperature();
+        if(_PlayingFootstep)
+        {
+            _FootstepTimer += Time.deltaTime;
+            if (_FootstepTimer > 0.3f)
+            {
+                _PlayingFootstep = false;
+                _FootstepTimer = 0.0f;
+            }
+        }
     }
    
     void handleMovement()
-    {
-        
+    {        
         // Horizontal
         float HorizontalMovement = Input.GetAxisRaw("Horizontal") * _MovementSpeed * Time.deltaTime ;// Horizontal axis controlled by A and D
+        if ((Input.GetAxisRaw("Horizontal") > 0.1 || Input.GetAxisRaw("Horizontal") < -0.1) && !_PlayingFootstep)
+        {
+            AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
+            _PlayingFootstep = true;
+        }
         Vector2 Movement = new Vector2(HorizontalMovement, _RigidBody.velocity.y);
         _RigidBody.velocity = Vector2.Lerp(_RigidBody.velocity, Movement, _SmoothMovement); // Smooths stopping/starting movement
         if(_RigidBody.velocity.x > 0.5)
@@ -70,7 +78,7 @@ public class CharacterScript : MonoBehaviour
         _RigidBody.position = new Vector2(X, _RigidBody.position.y);
 
         // Jump
-        float JumpHeight = 6.0f;
+        float JumpHeight = 7.0f;
         // Check if we are on top of a floor object
         RaycastHit2D hit = Physics2D.BoxCast(_Collider.bounds.center, _Collider.bounds.size, 0, Vector2.down, 0.1f, _Floor);
         if (Input.GetButtonDown("Jump") && hit.collider) // default key set to space

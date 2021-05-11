@@ -1357,8 +1357,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 31, y: 292.03192}
-  m_SizeDelta: {x: 694.6304, y: 167.945}
+  m_AnchoredPosition: {x: 29, y: 264}
+  m_SizeDelta: {x: 1000, y: 167.945}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &906001008
 MonoBehaviour:
@@ -1382,10 +1382,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: a220778f60854ac48a2243ad2c268adc, type: 3}
-    m_FontSize: 14
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1393,7 +1393,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Placeholder title
+  m_Text: Thermophobia
 --- !u!222 &906001009
 CanvasRenderer:
   m_ObjectHideFlags: 0
