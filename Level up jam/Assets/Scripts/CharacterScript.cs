@@ -34,6 +34,14 @@ public class CharacterScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.Space) && Input.GetKey(KeyCode.D))
+        {
+            AkSoundEngine.PostEvent("Play_LongJump", gameObject);
+        }
+        if (Input.GetKey(KeyCode.Space) && Input.GetKey(KeyCode.A))
+        {
+            AkSoundEngine.PostEvent("Play_LongJump", gameObject);
+        }
         handleMovement();
         handleTemperature();
         if(_PlayingFootstep)
