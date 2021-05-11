@@ -83,7 +83,7 @@ public class CharacterScript : MonoBehaviour
         RaycastHit2D hit = Physics2D.BoxCast(_Collider.bounds.center, _Collider.bounds.size, 0, Vector2.down, 0.1f, _Floor);
         if (Input.GetButtonDown("Jump") && hit.collider) // default key set to space
         {
-            AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
+            AkSoundEngine.PostEvent("Play_Jump", gameObject);
             _RigidBody.AddForce(new Vector2(0, JumpHeight), ForceMode2D.Impulse);
         }
     }
