@@ -4,11 +4,15 @@
 		<UserProjectSettings Name="" ID="{017F45BC-CBCA-460C-A2B0-5F6456BB1626}">
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Asus\Downloads\"/>
+				<Property Name="Event Action List\{0A34FF82-394E-43F2-AA69-D879251C7B79}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{0E2F95A4-1E24-435F-9471-215075FCFF0A}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{372BE12F-0C20-4D99-AB0E-00DB0E888896}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3FB3FB84-7D87-4CD8-87EF-E7B52FC302B9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{4BFDFC80-CC39-4049-BCB5-4645FD517F20}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{58C3AD85-E1D8-49BE-8C46-D3D7F9F730D0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7A4D1794-FFD8-48F3-BCDC-5F11B2F1FD9B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A6D5B13C-BAEB-4CDC-8C1C-E5E4447F899D}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{A77D3565-DFB4-4678-8BFB-AE2A0B5C4038}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AE3F2CCB-ECDA-4EE0-82B6-5EF22DCB9918}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B13E43F0-69D5-49E5-B838-6C7B9B3AFBF7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E45CB8E6-5BE0-4DEC-99BE-A2F9D627E2F1}\x64_Expand States" Type="string" Value=""/>

@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	2603220653	Play_MovingPlatform			\Default Work Unit\Play_MovingPlatform	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	220054121	MovingPlatform	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\404050__deathscyp__moving-platform_5CD82F2F.wem		\Actor-Mixer Hierarchy\Default Work Unit\MovingPlatform		7650776
+	220054121	MovingPlatform	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\404050__deathscyp__moving-platform_5B5FF350.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\MovingPlatform		7650776
 

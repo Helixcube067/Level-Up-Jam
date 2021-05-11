@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e105d2d10c5944baa40445b8fba662e
     GuidInternal: 
-    m_lastTime: -8585808457863596339
+    m_lastTime: -8585808418690779822
     List:
     - name: Button
       guid: 7a0cc16b83b5194b8adfde2dd1841afb
@@ -178,8 +178,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7fbcac2606e7fa4bb55587853f466049
     GuidInternal: 
-    m_lastTime: -8585808457864553781
+    m_lastTime: -8585808413610562424
     List:
+    - name: Play_FootstepConcrete
+      guid: 65357da7b4df78468bfbae2a0b5c4038
+      id: 2860538893
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Play_FootstepConcrete
+        ObjectType: 3
+        guid: 65357da7b4df78468bfbae2a0b5c4038
+      Path: Events\Default Work Unit\Play_FootstepConcrete
+      maxAttenuation: 0
+      maxDuration: 0.451885
+      minDuration: 0.229685
+    - name: Play_FootstepGravel
+      guid: 94174d7ad8fff348bcdc5f11b2f1fd9b
+      id: 939773945
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Play_FootstepGravel
+        ObjectType: 3
+        guid: 94174d7ad8fff348bcdc5f11b2f1fd9b
+      Path: Events\Default Work Unit\Play_FootstepGravel
+      maxAttenuation: 0
+      maxDuration: 0.650771
+      minDuration: 0.426128
     - name: Play_Footsteps
       guid: 2fe12b37200c994dab0e00db0e888896
       id: 3854155799
@@ -212,8 +246,8 @@ MonoBehaviour:
         guid: b09d33f9002a11478f6e3ee9e53028b9
       Path: Events\Default Work Unit\Play_FootstepsGrass
       maxAttenuation: 0
-      maxDuration: 0.024138
-      minDuration: 0.024138
+      maxDuration: 0.420912
+      minDuration: 0.268767
     - name: Play_Forest_Biom
       guid: 84fbb33f877dd84c87efe7b52fc302b9
       id: 2129929147
@@ -231,6 +265,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Jump
+      guid: 82ff340a4e39f243aa69d879251c7b79
+      id: 3689126666
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Play_Jump
+        ObjectType: 3
+        guid: 82ff340a4e39f243aa69d879251c7b79
+      Path: Events\Default Work Unit\Play_Jump
+      maxAttenuation: 0
+      maxDuration: 0.401767
+      minDuration: 0.401767
+    - name: Play_LongJump
+      guid: a4952f0e241e5f439471215075fcff0a
+      id: 457516612
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Play_LongJump
+        ObjectType: 3
+        guid: a4952f0e241e5f439471215075fcff0a
+      Path: Events\Default Work Unit\Play_LongJump
+      maxAttenuation: 0
+      maxDuration: 0.698195
+      minDuration: 0.439835
     - name: Play_Main_Menu
       guid: cb2c3faedaece04e82b65ef22dcb9918
       id: 3306210749
@@ -470,7 +538,7 @@ MonoBehaviour:
     m_lastTime: -8585808457863506565
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000a0000000b0000000d0000000e0000000f0000001000000011000000120000001300000017000000180000001a0000001b0000001c000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000a0000000b0000000d0000000e0000000f0000001000000011000000120000001300000017000000180000001a0000001b0000001c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -96,7 +96,51 @@
 						<Action Name="" ID="{FA16A8B4-E871-4CCF-8136-E938B9BE0F77}" ShortID="1073038388">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="FootstepsGrass" ID="{B8B8D765-E0A3-4E63-84B9-C2FC0313C486}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+									<ObjectRef Name="FootstepsGrass" ID="{B709C6CE-AACE-4756-9686-166336B9C5EB}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FootstepConcrete" ID="{A77D3565-DFB4-4678-8BFB-AE2A0B5C4038}">
+					<ChildrenList>
+						<Action Name="" ID="{DF5251CB-428D-4564-AA39-2E3A7BB386B9}" ShortID="712549966">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FootstepConcrete" ID="{EB52B9B9-CCF3-48F1-BB73-AF4FB0C69CCA}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Jump" ID="{0A34FF82-394E-43F2-AA69-D879251C7B79}">
+					<ChildrenList>
+						<Action Name="" ID="{A96E673C-2D21-42BF-93CF-FE54F1F0353E}" ShortID="1064008349">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump" ID="{F30C12BE-FC5F-4B78-953A-B194060FB8C5}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_FootstepGravel" ID="{7A4D1794-FFD8-48F3-BCDC-5F11B2F1FD9B}">
+					<ChildrenList>
+						<Action Name="" ID="{992310FB-3950-4CD3-8739-247290F5EFC2}" ShortID="763644663">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FootstepGravel" ID="{43D139C0-7791-4545-9C72-FC1E3F839B73}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_LongJump" ID="{0E2F95A4-1E24-435F-9471-215075FCFF0A}">
+					<ChildrenList>
+						<Action Name="" ID="{7136C4C0-F0AD-4C12-BA01-921B1543F4E9}" ShortID="433499555">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LongJump" ID="{C06F8664-92FA-4865-8289-78E19CB7EC96}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

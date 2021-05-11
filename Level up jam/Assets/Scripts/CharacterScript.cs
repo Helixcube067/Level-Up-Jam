@@ -31,13 +31,21 @@ public class CharacterScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.Space) && Input.GetKey(KeyCode.A))
+        {
+            AkSoundEngine.PostEvent("Play_LongJump", gameObject);
+        }
+        if (Input.GetKey(KeyCode.Space) && Input.GetKey(KeyCode.D))
+        {
+            AkSoundEngine.PostEvent("Play_LongJump", gameObject);
+        }
         if (Input.GetKeyUp(KeyCode.D))
         {
-            AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
+            AkSoundEngine.PostEvent("Play_FootstepGravel", gameObject);
         }
         if (Input.GetKeyUp(KeyCode.A))
         {
-            AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
+            AkSoundEngine.PostEvent("Play_FootstepGravel", gameObject);
         }
         handleMovement();
         handleTemperature();
@@ -75,7 +83,7 @@ public class CharacterScript : MonoBehaviour
         RaycastHit2D hit = Physics2D.BoxCast(_Collider.bounds.center, _Collider.bounds.size, 0, Vector2.down, 0.1f, _Floor);
         if (Input.GetButtonDown("Jump") && hit.collider) // default key set to space
         {
-            AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
+            AkSoundEngine.PostEvent("Play_Jump", gameObject);
             _RigidBody.AddForce(new Vector2(0, JumpHeight), ForceMode2D.Impulse);
         }
     }

@@ -163,6 +163,89 @@
 						<ActiveSource Name="20af166b0a13e92 (online-audio-converter_com)" ID="{B58FA446-6603-4C8C-A774-B94F1C4EAC26}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Jump" ID="{F30C12BE-FC5F-4B78-953A-B194060FB8C5}" ShortID="50105109">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="z_uk-pryzhki (online-audio-converter_com)" ID="{8CF91F31-3C8F-48F5-9796-12297D2AE970}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.425873427183702"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.82764081131927"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>z_uk-pryzhki (online-audio-converter.com).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="373150550"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="z_uk-pryzhki (online-audio-converter_com)" ID="{8CF91F31-3C8F-48F5-9796-12297D2AE970}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="LongJump" ID="{C06F8664-92FA-4865-8289-78E19CB7EC96}" ShortID="1236570">
+					<PropertyList>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>51</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ValueList>
+								<Value>-510</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{07849822-6D05-4279-B628-DD2C5F5F40A6}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-800"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-8</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ecf1fac35ccc80b (online-audio-converter_com)" ID="{007CA2A3-453A-4C4E-9B73-ED6833A1E953}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.327606279104702"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.327606279104702"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>ecf1fac35ccc80b (online-audio-converter.com).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="504130772"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="ecf1fac35ccc80b (online-audio-converter_com)" ID="{007CA2A3-453A-4C4E-9B73-ED6833A1E953}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
