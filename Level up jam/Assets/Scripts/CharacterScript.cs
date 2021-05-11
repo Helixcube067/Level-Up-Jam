@@ -31,13 +31,18 @@ public class CharacterScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
+        }
         handleMovement();
         handleTemperature();
     }
-    public void OnTriggerEnter()
-    {
-        AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
-    }
+   
     void handleMovement()
     {
         

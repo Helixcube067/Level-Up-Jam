@@ -55,12 +55,12 @@
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1965550580">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2385628198" Language="SFX" Hash="2080395621">
+		<SoundBank Id="2385628198" Language="SFX" Hash="2067823898">
 			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps</ObjectPath>
 			<ShortName>Footsteps</ShortName>
 			<Path>Footsteps.bnk</Path>
@@ -154,6 +154,14 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="3408287295" Name="Play_FootstepsGrass" ObjectPath="\Events\Default Work Unit\Play_FootstepsGrass" DurationType="OneShot" DurationMin="0.024138" DurationMax="0.024138">
+					<IncludedMemoryFiles>
+						<File Id="1020966742" Language="SFX">
+							<ShortName>4850d7b71b51f16 (online-audio-converter.com).wav</ShortName>
+							<Path>SFX\4850d7b71b51f16 (online-audio-converter.com)_A41C87AE.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps">
@@ -180,7 +188,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2970696514">
+		<SoundBank Id="3991942870" Language="SFX" Hash="3304985757">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -194,6 +202,9 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="4055567060" Name="Menu_Music" ObjectPath="\Game Parameters\Default Work Unit\Menu_Music"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="4035573696" Language="SFX" Hash="3827605278">
 			<ObjectPath>\SoundBanks\Default Work Unit\Platform</ObjectPath>

@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	3408287295	Play_FootstepsGrass			\Default Work Unit\Play_FootstepsGrass	
 	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -23,5 +24,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	845843534	FootstepsGrass_04	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\4850d7b71b51f16 (online-audio-converter.com)_C77BF86D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsGrass\FootstepsGrass_04		52248
 	969139657	FootstepsGrass_01	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\4850d7b71b51f16 (online-audio-converter.com)_65FB1D3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsGrass\FootstepsGrass_01		74312
 	980325884	FootstepsGrass_02	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\4850d7b71b51f16 (online-audio-converter.com)_7A7C7F8A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsGrass\FootstepsGrass_02		49728
+	1020966742	FootstepsGrass	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\4850d7b71b51f16 (online-audio-converter.com)_A41C87AE.wem		\Actor-Mixer Hierarchy\Default Work Unit\FootstepsGrass		4324
 	1033440212	Footstep_Walking_Gravel_04	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Gravel_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepGravel\Footstep_Walking_Gravel_04		53192
 

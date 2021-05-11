@@ -91,6 +91,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_FootstepsGrass" ID="{F9339DB0-2A00-4711-8F6E-3EE9E53028B9}">
+					<ChildrenList>
+						<Action Name="" ID="{FA16A8B4-E871-4CCF-8136-E938B9BE0F77}" ShortID="1073038388">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FootstepsGrass" ID="{B8B8D765-E0A3-4E63-84B9-C2FC0313C486}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

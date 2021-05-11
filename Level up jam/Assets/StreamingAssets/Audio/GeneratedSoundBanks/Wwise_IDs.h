@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
+        static const AkUniqueID PLAY_FOOTSTEPSGRASS = 3408287295U;
         static const AkUniqueID PLAY_FOREST_BIOM = 2129929147U;
         static const AkUniqueID PLAY_MAIN_MENU = 3306210749U;
         static const AkUniqueID PLAY_MONEY = 80633010U;
@@ -37,6 +38,11 @@ namespace AK
         } // namespace FOOTSTEPS
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MENU_MUSIC = 4055567060U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

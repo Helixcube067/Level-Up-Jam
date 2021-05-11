@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Footsteps" ID="{065BE9EA-F632-4BD7-9429-532C9E200807}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_FootstepsGrass" ID="{F9339DB0-2A00-4711-8F6E-3EE9E53028B9}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps" ID="{372BE12F-0C20-4D99-AB0E-00DB0E888896}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

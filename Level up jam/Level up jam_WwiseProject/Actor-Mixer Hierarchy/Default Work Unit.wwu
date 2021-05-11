@@ -564,6 +564,43 @@
 				</SwitchContainer>
 				<WorkUnit Name="Music" ID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}" PersistMode="Reference"/>
 				<WorkUnit Name="SFX" ID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}" PersistMode="Reference"/>
+				<Sound Name="FootstepsGrass" ID="{B8B8D765-E0A3-4E63-84B9-C2FC0313C486}" ShortID="60189905">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>9</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="4850d7b71b51f16 (online-audio-converter_com)" ID="{A2CFAD06-F894-4427-9035-CB749BB8E7D8}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.00749958860048672"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0126002008788134"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.925333162266381"/>
+								<Property Name="TrimEnd" Type="Real64" Value="0.949470981078637"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>4850d7b71b51f16 (online-audio-converter.com).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1020966742"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="4850d7b71b51f16 (online-audio-converter_com)" ID="{A2CFAD06-F894-4427-9035-CB749BB8E7D8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

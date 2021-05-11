@@ -63,6 +63,39 @@
 				<Sound Name="Main Menu" ID="{F827F2CF-D895-4872-B133-C11615A4F675}" ShortID="259508704">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{4380FD85-35D6-453E-86A4-F1231DF4004C}" ShortID="108220428">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="Menu_Music" ID="{6117C05A-640A-4B34-ACC1-01988A71B4AD}" WorkUnitID="{632CB6B9-7C60-4CD8-9E96-1AA1DB8E374B}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{922F3A82-4B1B-45FF-8F4A-166BA4A2428B}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>50.44092</XPos>
+												<YPos>-0.34533</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>-8.15639</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
