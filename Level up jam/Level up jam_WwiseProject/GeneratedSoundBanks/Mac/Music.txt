@@ -1,10 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1334173279	Play_Winter_Biom			\Default Work Unit\Play_Winter_Biom	
-	2129929147	Play_Forest_Biom			\Default Work Unit\Play_Forest_Biom	
 	3306210749	Play_Main_Menu			\Default Work Unit\Play_Main_Menu	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	317452959	Winter Biom	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Antarktica (online-audio-converter.com)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Winter Biom		7036824
-	508301514	Forest Biom	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Forest (online-audio-converter.com)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Forest Biom		7059520
 	531307607	Main Menu	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\PuzzleGame2 (online-audio-converter.com)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Main Menu		17008192
 

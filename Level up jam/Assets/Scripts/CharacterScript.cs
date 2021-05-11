@@ -34,7 +34,10 @@ public class CharacterScript : MonoBehaviour
         handleMovement();
         handleTemperature();
     }
-
+    public void OnTriggerEnter()
+    {
+        AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
+    }
     void handleMovement()
     {
         

@@ -26,6 +26,21 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
+		<SoundBank Id="758863303" Language="SFX" Hash="3959017965">
+			<ObjectPath>\SoundBanks\Default Work Unit\Money</ObjectPath>
+			<ShortName>Money</ShortName>
+			<Path>Money.bnk</Path>
+			<IncludedEvents>
+				<Event Id="80633010" Name="Play_Money" ObjectPath="\Events\Default Work Unit\Play_Money" DurationType="OneShot" DurationMin="0.174467" DurationMax="0.174467">
+					<IncludedMemoryFiles>
+						<File Id="306945458" Language="SFX">
+							<ShortName>690c1f826b18139 (online-audio-converter.com).wav</ShortName>
+							<Path>SFX\690c1f826b18139 (online-audio-converter.com)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
 		<SoundBank Id="977454165" Language="SFX" Hash="2221733715">
 			<ObjectPath>\SoundBanks\Default Work Unit\Button</ObjectPath>
 			<ShortName>Button</ShortName>
@@ -150,10 +165,10 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="188655973">
-			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
-			<ShortName>Music</ShortName>
-			<Path>Music.bnk</Path>
+		<SoundBank Id="2580311907" Language="SFX" Hash="1595313339">
+			<ObjectPath>\SoundBanks\Default Work Unit\ForestMusic</ObjectPath>
+			<ShortName>ForestMusic</ShortName>
+			<Path>ForestMusic.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2129929147" Name="Play_Forest_Biom" ObjectPath="\Events\Default Work Unit\Play_Forest_Biom" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -163,19 +178,18 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3991942870" Language="SFX" Hash="2970696514">
+			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
+			<ShortName>Music</ShortName>
+			<Path>Music.bnk</Path>
+			<IncludedEvents>
 				<Event Id="3306210749" Name="Play_Main_Menu" ObjectPath="\Events\Default Work Unit\Play_Main_Menu" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="531307607" Language="SFX">
 							<ShortName>PuzzleGame2 (online-audio-converter.com).wav</ShortName>
 							<Path>SFX\PuzzleGame2 (online-audio-converter.com)_D79FB2B7.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1334173279" Name="Play_Winter_Biom" ObjectPath="\Events\Default Work Unit\Play_Winter_Biom" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="317452959" Language="SFX">
-							<ShortName>Antarktica (online-audio-converter.com).wav</ShortName>
-							<Path>SFX\Antarktica (online-audio-converter.com)_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

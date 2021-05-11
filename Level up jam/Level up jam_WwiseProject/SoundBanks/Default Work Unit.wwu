@@ -12,8 +12,6 @@
 				</SoundBank>
 				<SoundBank Name="Music" ID="{133F903D-435B-40A3-AF94-9123B6E83D09}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_Winter_Biom" ID="{58C3AD85-E1D8-49BE-8C46-D3D7F9F730D0}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Play_Forest_Biom" ID="{3FB3FB84-7D87-4CD8-87EF-E7B52FC302B9}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Main_Menu" ID="{AE3F2CCB-ECDA-4EE0-82B6-5EF22DCB9918}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -21,7 +19,7 @@
 				</SoundBank>
 				<SoundBank Name="Button" ID="{6BC10C7A-B583-4B19-8ADF-DE2DD1841AFB}">
 					<ObjectInclusionList>
-						<ObjectRef Name="SoundButton" ID="{EE380CC9-5E02-441E-A85F-99A084E2D189}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SoundButton" ID="{EE380CC9-5E02-441E-A85F-99A084E2D189}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -36,6 +34,20 @@
 				<SoundBank Name="Platform" ID="{C2A8833C-B94D-45A0-B5E1-F76DC3C3B501}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_MovingPlatform" ID="{E45CB8E6-5BE0-4DEC-99BE-A2F9D627E2F1}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Money" ID="{0B552E88-CF22-4F18-842A-AD7C1E2B558F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Money" ID="{B13E43F0-69D5-49E5-B838-6C7B9B3AFBF7}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="ForestMusic" ID="{F282DB5C-1633-44CE-9245-B13CABA81A73}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Forest_Biom" ID="{3FB3FB84-7D87-4CD8-87EF-E7B52FC302B9}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
