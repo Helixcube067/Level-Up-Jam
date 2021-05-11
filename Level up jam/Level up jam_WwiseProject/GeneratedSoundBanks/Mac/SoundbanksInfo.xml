@@ -11,10 +11,10 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="977454165" Language="SFX" Hash="1712699172">
-			<ObjectPath>\SoundBanks\Default Work Unit\Button</ObjectPath>
-			<ShortName>Button</ShortName>
-			<Path>Button.bnk</Path>
+		<SoundBank Id="697318834" Language="SFX" Hash="2611118896">
+			<ObjectPath>\SoundBanks\Default Work Unit\Slider</ObjectPath>
+			<ShortName>Slider</ShortName>
+			<Path>Slider.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1306435193" Name="Play_Slider" ObjectPath="\Events\Default Work Unit\Play_Slider" DurationType="OneShot" DurationMin="0.174467" DurationMax="0.174467">
 					<IncludedMemoryFiles>
@@ -24,6 +24,13 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="977454165" Language="SFX" Hash="2221733715">
+			<ObjectPath>\SoundBanks\Default Work Unit\Button</ObjectPath>
+			<ShortName>Button</ShortName>
+			<Path>Button.bnk</Path>
+			<IncludedEvents>
 				<Event Id="2631470667" Name="Play_SoundButton" ObjectPath="\Events\Default Work Unit\Play_SoundButton" DurationType="OneShot" DurationMin="0.319478" DurationMax="0.319478"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
@@ -169,6 +176,21 @@
 						<File Id="317452959" Language="SFX">
 							<ShortName>Antarktica (online-audio-converter.com).wav</ShortName>
 							<Path>SFX\Antarktica (online-audio-converter.com)_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="4035573696" Language="SFX" Hash="3827605278">
+			<ObjectPath>\SoundBanks\Default Work Unit\Platform</ObjectPath>
+			<ShortName>Platform</ShortName>
+			<Path>Platform.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2603220653" Name="Play_MovingPlatform" ObjectPath="\Events\Default Work Unit\Play_MovingPlatform" MaxAttenuation="15.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="220054121" Language="SFX">
+							<ShortName>404050__deathscyp__moving-platform.wav</ShortName>
+							<Path>SFX\404050__deathscyp__moving-platform_5CD82F2F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

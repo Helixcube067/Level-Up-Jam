@@ -58,6 +58,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Slider" ID="{4BFDFC80-CC39-4049-BCB5-4645FD517F20}">
+					<ChildrenList>
+						<Action Name="" ID="{DDC2DECA-DAA2-47EC-95A4-570D900664D4}" ShortID="817336054">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Slider" ID="{2CAD9BCF-0D35-4305-9AA8-FDFC034F42B3}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MovingPlatform" ID="{E45CB8E6-5BE0-4DEC-99BE-A2F9D627E2F1}">
+					<ChildrenList>
+						<Action Name="" ID="{235C3CBE-DCF0-478F-85CA-113FD89EFCDC}" ShortID="1053874805">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MovingPlatform" ID="{5D6F1A62-D14B-4094-A6F0-D7F212B9A1B4}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

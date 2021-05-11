@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
         static const AkUniqueID PLAY_FOREST_BIOM = 2129929147U;
         static const AkUniqueID PLAY_MAIN_MENU = 3306210749U;
+        static const AkUniqueID PLAY_MOVINGPLATFORM = 2603220653U;
         static const AkUniqueID PLAY_SLIDER = 1306435193U;
         static const AkUniqueID PLAY_SOUNDBUTTON = 2631470667U;
         static const AkUniqueID PLAY_WINTER_BIOM = 1334173279U;
@@ -43,6 +44,8 @@ namespace AK
         static const AkUniqueID BUTTON = 977454165U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID PLATFORM = 4035573696U;
+        static const AkUniqueID SLIDER = 697318834U;
     } // namespace BANKS
 
     namespace BUSSES

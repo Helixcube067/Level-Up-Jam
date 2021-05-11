@@ -6,9 +6,11 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Asus\Downloads\"/>
 				<Property Name="Event Action List\{372BE12F-0C20-4D99-AB0E-00DB0E888896}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3FB3FB84-7D87-4CD8-87EF-E7B52FC302B9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{4BFDFC80-CC39-4049-BCB5-4645FD517F20}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{58C3AD85-E1D8-49BE-8C46-D3D7F9F730D0}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A6D5B13C-BAEB-4CDC-8C1C-E5E4447F899D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AE3F2CCB-ECDA-4EE0-82B6-5EF22DCB9918}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E45CB8E6-5BE0-4DEC-99BE-A2F9D627E2F1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
 						<Value Platform="Windows"></Value>
@@ -23,7 +25,7 @@
 				</Property>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="qhLvHCgEdU+LItivmaPNOlKB3lCX7oxBkEKTIYdmxgg="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="6ulbBjL210uUKVMsniAIBz2QPxNbQ6NAr5SRI7boPQl6DMFrg7UZS4rf3i3RhBr7"/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="6ulbBjL210uUKVMsniAIBz2QPxNbQ6NAr5SRI7boPQl6DMFrg7UZS4rf3i3RhBr7e7Sm/Ni3zkuIm/RbTpuw+jyDqMJNuaBFteH3bcPDtQE="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>

@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e105d2d10c5944baa40445b8fba662e
     GuidInternal: 
-    m_lastTime: -8585808863692900119
+    m_lastTime: -8585808814280990418
     List:
     - name: Button
       guid: 7a0cc16b83b5194b8adfde2dd1841afb
@@ -110,6 +110,34 @@ MonoBehaviour:
         ObjectType: 7
         guid: 3d903f135b43a340af949123b6e83d09
       Path: SoundBanks\Default Work Unit\Music
+    - name: Platform
+      guid: 3c83a8c24db9a045b5e1f76dc3c3b501
+      id: 4035573696
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e105d2d10c5944baa40445b8fba662e
+      - ElementName: Platform
+        ObjectType: 7
+        guid: 3c83a8c24db9a045b5e1f76dc3c3b501
+      Path: SoundBanks\Default Work Unit\Platform
+    - name: Slider
+      guid: 7bb4a6fcd8b7ce4b889bf45b4e9bb0fa
+      id: 697318834
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e105d2d10c5944baa40445b8fba662e
+      - ElementName: Slider
+        ObjectType: 7
+        guid: 7bb4a6fcd8b7ce4b889bf45b4e9bb0fa
+      Path: SoundBanks\Default Work Unit\Slider
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -122,7 +150,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7fbcac2606e7fa4bb55587853f466049
     GuidInternal: 
-    m_lastTime: -8585808863693059665
+    m_lastTime: -8585808814281149984
     List:
     - name: Play_Footsteps
       guid: 2fe12b37200c994dab0e00db0e888896
@@ -175,6 +203,40 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_MovingPlatform
+      guid: e6b85ce4e05bec4d99bea2f9d627e2f1
+      id: 2603220653
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Play_MovingPlatform
+        ObjectType: 3
+        guid: e6b85ce4e05bec4d99bea2f9d627e2f1
+      Path: Events\Default Work Unit\Play_MovingPlatform
+      maxAttenuation: 15
+      maxDuration: 40.55102
+      minDuration: 40.55102
+    - name: Play_Slider
+      guid: 80fcfd4b39cc4940bcb54645fd517f20
+      id: 1306435193
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Play_Slider
+        ObjectType: 3
+        guid: 80fcfd4b39cc4940bcb54645fd517f20
+      Path: Events\Default Work Unit\Play_Slider
+      maxAttenuation: 0
+      maxDuration: 0.174467
+      minDuration: 0.174467
     - name: Play_SoundButton
       guid: 3cb1d5a6ebbadc4c8c1ce5e4447f899d
       id: 2631470667
@@ -332,7 +394,7 @@ MonoBehaviour:
     m_lastTime: -8585808921521970798
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000a0000000b0000000d0000000e0000000f00000010000000
+  ExpandedWaapiItemIds: 0100000005000000060000000a0000000b0000000d0000000f000000100000001100000017000000180000001a000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
