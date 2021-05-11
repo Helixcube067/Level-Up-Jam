@@ -37,20 +37,23 @@ public class CharacterScript : MonoBehaviour
 
     void handleMovement()
     {
+        
         // Horizontal
-        float HorizontalMovement = Input.GetAxisRaw("Horizontal") * _MovementSpeed * Time.deltaTime; // Horizontal axis controlled by A and D
+        float HorizontalMovement = Input.GetAxisRaw("Horizontal") * _MovementSpeed * Time.deltaTime ;// Horizontal axis controlled by A and D
         Vector2 Movement = new Vector2(HorizontalMovement, _RigidBody.velocity.y);
         _RigidBody.velocity = Vector2.Lerp(_RigidBody.velocity, Movement, _SmoothMovement); // Smooths stopping/starting movement
-        if(_RigidBody.velocity.x > 0.1)
+        if(_RigidBody.velocity.x > 0.5)
         {
+            
             gameObject.transform.localScale = new Vector3(1, 1, 1);
         }
         else if(_RigidBody.velocity.x < -0.1)
         {
+            
             _RigidBody.transform.localScale = new Vector3(-1, 1, 1);
         }
         _RigidBody.rotation = 0;
-
+        
         // Make it impossible to walk back outside camera view
         float CameraHorizontalHalfSize = Camera.main.orthographicSize * Screen.width / Screen.height;
         float CameraMin = Camera.main.transform.position.x - CameraHorizontalHalfSize;
@@ -64,6 +67,7 @@ public class CharacterScript : MonoBehaviour
         RaycastHit2D hit = Physics2D.BoxCast(_Collider.bounds.center, _Collider.bounds.size, 0, Vector2.down, 0.1f, _Floor);
         if (Input.GetButtonDown("Jump") && hit.collider) // default key set to space
         {
+            AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
             _RigidBody.AddForce(new Vector2(0, JumpHeight), ForceMode2D.Impulse);
         }
     }

@@ -1,0 +1,27 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3854155799	Play_Footsteps			\Default Work Unit\Play_Footsteps	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	841620460	Concrete	Footsteps			
+	2185786256	Gravel	Footsteps			
+	4248645337	Grass	Footsteps			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	61205068	Footstep_Walking_Concrete_04	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Concrete_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepConcrete\Footstep_Walking_Concrete_04		27402
+	158582859	Footstep_Walking_Gravel_02	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Gravel_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepGravel\Footstep_Walking_Gravel_02		55722
+	180468304	Footstep_Walking_Concrete_01	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepConcrete\Footstep_Walking_Concrete_01		29734
+	294210279	Footstep_Walking_Concrete_06	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Concrete_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepConcrete\Footstep_Walking_Concrete_06		38712
+	358680511	Footstep_Walking_Gravel_03	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Gravel_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepGravel\Footstep_Walking_Gravel_03		45982
+	584523038	Footstep_Walking_Gravel_06	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Gravel_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepGravel\Footstep_Walking_Gravel_06		52844
+	658223240	Footstep_Walking_Gravel_01	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Gravel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepGravel\Footstep_Walking_Gravel_01		47628
+	674771549	Footstep_Walking_Concrete_03	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Concrete_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepConcrete\Footstep_Walking_Concrete_03		24814
+	753084490	Footstep_Walking_Concrete_02	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Concrete_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepConcrete\Footstep_Walking_Concrete_02		35164
+	766168489	FootstepsGrass	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\4850d7b71b51f16 (online-audio-converter.com)_5D66D7DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsGrass\FootstepsGrass		47476
+	845843534	FootstepsGrass_04	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\4850d7b71b51f16 (online-audio-converter.com)_C77BF86D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsGrass\FootstepsGrass_04		52248
+	969139657	FootstepsGrass_01	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\4850d7b71b51f16 (online-audio-converter.com)_65FB1D3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsGrass\FootstepsGrass_01		74312
+	980325884	FootstepsGrass_02	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\4850d7b71b51f16 (online-audio-converter.com)_7A7C7F8A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepsGrass\FootstepsGrass_02		49728
+	1033440212	Footstep_Walking_Gravel_04	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Footstep_Walking_Gravel_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepGravel\Footstep_Walking_Gravel_04		53192
+

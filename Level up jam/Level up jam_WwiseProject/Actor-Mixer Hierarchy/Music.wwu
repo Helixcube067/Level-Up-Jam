@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}" SchemaVersion="103" RootDocumentID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}" ParentDocumentID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}">
+	<AudioObjects>
+		<WorkUnit Name="Music" ID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}" OwnerID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}" PersistMode="Nested">
+			<ChildrenList>
+				<Sound Name="Winter Biom" ID="{07860C53-38A1-45BC-8A0D-9CA0EB29E71A}" ShortID="513906676">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Antarktica (online-audio-converter_com)" ID="{891D2794-0180-4354-835E-6DF121E91CA9}">
+							<Language>SFX</Language>
+							<AudioFile>Antarktica (online-audio-converter.com).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="317452959"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Antarktica (online-audio-converter_com)" ID="{891D2794-0180-4354-835E-6DF121E91CA9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Forest Biom" ID="{13AA9FF6-360F-4953-A337-E87F80DD04BE}" ShortID="1055399086">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-18</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Forest (online-audio-converter_com)" ID="{3ABBFF39-B3B7-40C4-8247-C7380EAFD645}">
+							<Language>SFX</Language>
+							<AudioFile>Forest (online-audio-converter.com).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="508301514"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Forest (online-audio-converter_com)" ID="{3ABBFF39-B3B7-40C4-8247-C7380EAFD645}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Main Menu" ID="{F827F2CF-D895-4872-B133-C11615A4F675}" ShortID="259508704">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="PuzzleGame2 (online-audio-converter_com)" ID="{DE6ADF32-232D-439B-B195-5B3A62427D07}">
+							<Language>SFX</Language>
+							<AudioFile>PuzzleGame2 (online-audio-converter.com).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="531307607"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="PuzzleGame2 (online-audio-converter_com)" ID="{DE6ADF32-232D-439B-B195-5B3A62427D07}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

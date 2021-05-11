@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{2D5D103E-C510-4B94-AA40-445B8FBA662E}" SchemaVersion="103">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{2D5D103E-C510-4B94-AA40-445B8FBA662E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Footsteps" ID="{065BE9EA-F632-4BD7-9429-532C9E200807}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Footsteps" ID="{372BE12F-0C20-4D99-AB0E-00DB0E888896}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{133F903D-435B-40A3-AF94-9123B6E83D09}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Winter_Biom" ID="{58C3AD85-E1D8-49BE-8C46-D3D7F9F730D0}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Forest_Biom" ID="{3FB3FB84-7D87-4CD8-87EF-E7B52FC302B9}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Main_Menu" ID="{AE3F2CCB-ECDA-4EE0-82B6-5EF22DCB9918}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Button" ID="{6BC10C7A-B583-4B19-8ADF-DE2DD1841AFB}">
+					<ObjectInclusionList>
+						<ObjectRef Name="SoundButton" ID="{EE380CC9-5E02-441E-A85F-99A084E2D189}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

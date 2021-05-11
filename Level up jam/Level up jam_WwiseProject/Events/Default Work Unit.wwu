@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{26ACBC7F-E706-4BFA-B555-87853F466049}" SchemaVersion="103">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{26ACBC7F-E706-4BFA-B555-87853F466049}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Footsteps" ID="{372BE12F-0C20-4D99-AB0E-00DB0E888896}">
+					<ChildrenList>
+						<Action Name="" ID="{17A4BBDE-95D0-4596-9FEA-EE0A6B12D567}" ShortID="669186846">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps" ID="{FF1137E1-4239-44F8-A51D-1E5A290CC19F}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Forest_Biom" ID="{3FB3FB84-7D87-4CD8-87EF-E7B52FC302B9}">
+					<ChildrenList>
+						<Action Name="" ID="{E3175516-2952-4E62-9C3A-EAA91725481C}" ShortID="294531370">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Forest Biom" ID="{13AA9FF6-360F-4953-A337-E87F80DD04BE}" WorkUnitID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Winter_Biom" ID="{58C3AD85-E1D8-49BE-8C46-D3D7F9F730D0}">
+					<ChildrenList>
+						<Action Name="" ID="{472C43AB-F6C2-4B70-8D7F-5A7745376C27}" ShortID="455540558">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Winter Biom" ID="{07860C53-38A1-45BC-8A0D-9CA0EB29E71A}" WorkUnitID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Main_Menu" ID="{AE3F2CCB-ECDA-4EE0-82B6-5EF22DCB9918}">
+					<ChildrenList>
+						<Action Name="" ID="{986963DB-1F43-4EDB-993D-8F5284959116}" ShortID="1019722930">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Main Menu" ID="{F827F2CF-D895-4872-B133-C11615A4F675}" WorkUnitID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SoundButton" ID="{A6D5B13C-BAEB-4CDC-8C1C-E5E4447F899D}">
+					<ChildrenList>
+						<Action Name="" ID="{BAB8562D-9586-49B2-B9F9-F102DB8FAB0D}" ShortID="583623381">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SoundButton" ID="{EE380CC9-5E02-441E-A85F-99A084E2D189}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
