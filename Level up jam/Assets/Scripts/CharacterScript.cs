@@ -10,6 +10,7 @@ public class CharacterScript : MonoBehaviour
     [SerializeField] [Range(0, 1)] float _SmoothMovement;
     [SerializeField] LayerMask _Floor;
     [SerializeField] float _InitialBodyTemperature;
+    [SerializeField] float _JumpHeight = 7.0f;
 
     // Class variables
     Rigidbody2D _RigidBody;
@@ -17,7 +18,8 @@ public class CharacterScript : MonoBehaviour
     float _BodyTemperature;
     Text _BodyTemperatureText;
     float _FootstepTimer;
-    bool _PlayingFootstep;
+    bool _PlayingMovementSound;
+    SceneMovement _SceneMovement;
 
     // Start is called before the first frame update
     void Start()
@@ -28,46 +30,40 @@ public class CharacterScript : MonoBehaviour
         _BodyTemperatureText = GameObject.Find("TemperatureValue").GetComponent<Text>();
         _BodyTemperatureText.text = _BodyTemperature.ToString();
         _FootstepTimer = 0.0f;
-        _PlayingFootstep = false;
+        _PlayingMovementSound = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && Input.GetKey(KeyCode.D))
-        {
-            AkSoundEngine.PostEvent("Play_LongJump", gameObject);
-        }
-        if (Input.GetKey(KeyCode.Space) && Input.GetKey(KeyCode.A))
-        {
-            AkSoundEngine.PostEvent("Play_LongJump", gameObject);
-        }
         handleMovement();
         handleTemperature();
-        if(_PlayingFootstep)
+        if(_PlayingMovementSound)
         {
             _FootstepTimer += Time.deltaTime;
             if (_FootstepTimer > 0.3f)
             {
-                _PlayingFootstep = false;
+                _PlayingMovementSound = false;
                 _FootstepTimer = 0.0f;
             }
         }
     }
-
-
-
-
-
    
     void handleMovement()
     {        
         // Horizontal
         float HorizontalMovement = Input.GetAxisRaw("Horizontal") * _MovementSpeed * Time.deltaTime ;// Horizontal axis controlled by A and D
-        if ((Input.GetAxisRaw("Horizontal") > 0.1 || Input.GetAxisRaw("Horizontal") < -0.1) && !_PlayingFootstep)
+        if ((Input.GetAxisRaw("Horizontal") > 0.1 || Input.GetAxisRaw("Horizontal") < -0.1) && !_PlayingMovementSound)
         {
-            AkSoundEngine.PostEvent("Play_FootstepGravel", gameObject);
-            _PlayingFootstep = true;
+            if(IsGrounded())
+            {
+                AkSoundEngine.PostEvent("Play_FootstepGravel", gameObject);
+            }
+            else
+            {
+                AkSoundEngine.PostEvent("Play_LongJump", gameObject);
+            }
+            _PlayingMovementSound = true;
         }
         Vector2 Movement = new Vector2(HorizontalMovement, _RigidBody.velocity.y);
         _RigidBody.velocity = Vector2.Lerp(_RigidBody.velocity, Movement, _SmoothMovement); // Smooths stopping/starting movement
@@ -91,14 +87,10 @@ public class CharacterScript : MonoBehaviour
         _RigidBody.position = new Vector2(X, _RigidBody.position.y);
 
         // Jump
-        float JumpHeight = 7.0f;
-        // Check if we are on top of a floor object
-        RaycastHit2D hit = Physics2D.BoxCast(_Collider.bounds.center, _Collider.bounds.size, 0, Vector2.down, 0.1f, _Floor);
-        if (Input.GetButtonDown("Jump") && hit.collider) // default key set to space
+        if (IsGrounded() && Input.GetButtonDown("Jump")) // default key set to space
         {
-            
             AkSoundEngine.PostEvent("Play_Jump", gameObject);
-            _RigidBody.AddForce(new Vector2(0, JumpHeight), ForceMode2D.Impulse);
+            _RigidBody.AddForce(new Vector2(0, _JumpHeight), ForceMode2D.Impulse);
         }
     }
 
@@ -115,8 +107,31 @@ public class CharacterScript : MonoBehaviour
             _BodyTemperatureText.text = _BodyTemperature.ToString();
         }
     }
+   
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Death
+        if (collision.gameObject.tag == "Death")
+        {
+            Die();
+        }
+    }
+    
+    void Die()
+    {
+        //TODO: Play death sound, show endgame screen?
+        // Sending you back to the Title Screen when you die for now;
+        _SceneMovement.LoadLevel("TitleScreen");
+    }
 
     public float GetBodyTemp() {
         return _BodyTemperature;
+    }
+
+    public bool IsGrounded()
+    {
+        // Check if we are on top of a floor object
+        RaycastHit2D hit = Physics2D.BoxCast(_Collider.bounds.center, _Collider.bounds.size, 0, Vector2.down, 0.1f, _Floor);
+        return hit.collider;
     }
 }
