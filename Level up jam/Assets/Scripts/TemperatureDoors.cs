@@ -20,10 +20,15 @@ public class TemperatureDoors : MonoBehaviour
         if (collision.gameObject.tag == "Player") {
             float bodyTemp = player.GetBodyTemp();
             if (bodyTemp < minTempRequired || bodyTemp > maxTempRequired)
+            {
                 Debug.Log("Sorry no passing");
+            }
             else
+            {
+                //AkSoundEngine.PostEvent("Play_Money", gameObject); TODO: play sound when sound is available
                 _Collider.enabled = false;
                 _Animator.speed = 1;
+            }
         }
     }
 }
