@@ -30,7 +30,7 @@ public class SceneMovement : MonoBehaviour
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         loadingScreen.SetActive(true);
         otherScreen.SetActive(false);
-
+        Time.timeScale = 0f;
         while (operation.isDone == false)
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);

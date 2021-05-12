@@ -26,7 +26,7 @@ public class CameraScript : MonoBehaviour
         float X = Mathf.Clamp(_Player.transform.position.x, _XMin, _XMax);
         float Y = Mathf.Clamp(_Player.transform.position.y, _YMin, _YMax);
         // Make it impossible for the camera to move back
-        X = Mathf.Max(X, transform.position.x);
+        //X = Mathf.Max(X, transform.position.x);
         transform.position = new Vector3(X, Y, transform.position.z);
     }
 }
