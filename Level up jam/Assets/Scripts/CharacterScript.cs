@@ -12,6 +12,9 @@ public class CharacterScript : MonoBehaviour
     [SerializeField] LayerMask _Floor;
     [SerializeField] float _InitialBodyTemperature;
     [SerializeField] float _JumpHeight = 7.0f;
+    [SerializeField] Text _BodyTemperatureText;
+    [SerializeField] GameObject _UI_IngameStuff;
+    [SerializeField] GameObject _UI_GameOverScreen;
 
     public Animator _Animator;
 
@@ -19,10 +22,8 @@ public class CharacterScript : MonoBehaviour
     Rigidbody2D _RigidBody;
     PolygonCollider2D _Collider;
     float _BodyTemperature;
-    Text _BodyTemperatureText;
     float _FootstepTimer;
     bool _PlayingMovementSound;
-    SceneMovement _SceneMovement;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,6 @@ public class CharacterScript : MonoBehaviour
         _BodyTemperature = _InitialBodyTemperature;
         _RigidBody = GetComponent<Rigidbody2D>();
         _Collider = GetComponent<PolygonCollider2D>();
-        _BodyTemperatureText = GameObject.Find("TemperatureValue").GetComponent<Text>();
         _BodyTemperatureText.text = _BodyTemperature.ToString();
         _FootstepTimer = 0.0f;
         _PlayingMovementSound = false;
@@ -124,7 +124,9 @@ public class CharacterScript : MonoBehaviour
     {
         //TODO: Play death sound, show endgame screen?
         // Sending you back to the Title Screen when you die for now;
-        _SceneMovement.LoadLevel("TitleScreen");
+        Debug.Log("Die");
+        _UI_IngameStuff.gameObject.SetActive(false);
+        _UI_GameOverScreen.gameObject.SetActive(true);
     }
 
     public float GetBodyTemp() {
