@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FadeInOut : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class FadeInOut : MonoBehaviour
     IEnumerator LevelLoad(string name)
     {
         yield return new WaitForSeconds(3f);
-        Application.LoadLevel(name);
+        SceneManager.LoadScene(name);
     }
 
    

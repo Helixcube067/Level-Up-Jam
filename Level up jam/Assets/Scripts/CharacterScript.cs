@@ -15,6 +15,8 @@ public class CharacterScript : MonoBehaviour
     [SerializeField] Text _BodyTemperatureText;
     [SerializeField] GameObject _UI_IngameStuff;
     [SerializeField] GameObject _UI_GameOverScreen;
+    [SerializeField] Slider _healthSlider;
+    [SerializeField] GameObject _replayMenu;
 
     public Animator _Animator;
    
@@ -23,6 +25,9 @@ public class CharacterScript : MonoBehaviour
     PolygonCollider2D _Collider;
     float _BodyTemperature;
     float _FootstepTimer;
+    bool _PlayingFootstep;
+    double _health = 100.0;
+    
     bool _PlayingMovementSound;
 
     // Start is called before the first frame update
@@ -50,6 +55,16 @@ public class CharacterScript : MonoBehaviour
                 _FootstepTimer = 0.0f;
             }
         }
+        //Temperature goes up in desert, down in snow, goes back to 36.
+        //Once below 30 you start losing health.
+        //Once above 42 you start losing health.
+        if (_BodyTemperature >= 42)
+            _health -= 0.01;
+        else if (_BodyTemperature <= -5) { //made this -5 for testing health drain
+            _health -= 0.01;
+        }            
+        _healthSlider.value = (int)_health;
+        DeathCheck();
     }
    
     void handleMovement()
@@ -127,6 +142,14 @@ public class CharacterScript : MonoBehaviour
         Debug.Log("Die");
         _UI_IngameStuff.gameObject.SetActive(false);
         _UI_GameOverScreen.gameObject.SetActive(true);
+    }
+    public void DeathCheck() {
+        if (gameObject.transform.position.y <= -5 || _health == 0) {
+            Debug.Log("Pos: " + gameObject.transform.position.y);
+            Debug.Log("Health: " + _health);
+            Time.timeScale = 0f;
+            _replayMenu.SetActive(true);
+        }
     }
 
     public float GetBodyTemp() {
