@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAY_MOVINGPLATFORM = 2603220653U;
         static const AkUniqueID PLAY_SLIDER = 1306435193U;
         static const AkUniqueID PLAY_SOUNDBUTTON = 2631470667U;
+        static const AkUniqueID STOP_FOOTSTEPGRAVEL = 2726058795U;
     } // namespace EVENTS
 
     namespace SWITCHES

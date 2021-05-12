@@ -4,20 +4,31 @@ using UnityEngine;
 
 public class TemperatureDoors : MonoBehaviour
 {
-    public float tempRequired;
+    [SerializeField] Animator _Animator;
+    [SerializeField] BoxCollider2D _Collider;
+    public float minTempRequired;
+    public float maxTempRequired;
     private CharacterScript player;
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterScript>();
+        _Animator.speed = 0;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player") {
-            if (player.GetBodyTemp() <= tempRequired)
+            float bodyTemp = player.GetBodyTemp();
+            if (bodyTemp < minTempRequired || bodyTemp > maxTempRequired)
+            {
                 Debug.Log("Sorry no passing");
+            }
             else
-                this.gameObject.SetActive(false);
+            {
+                //AkSoundEngine.PostEvent("Play_Money", gameObject); TODO: play sound when sound is available
+                _Collider.enabled = false;
+                _Animator.speed = 1;
+            }
         }
     }
 }

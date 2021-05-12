@@ -60,7 +60,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2385628198" Language="SFX" Hash="3935334983">
+		<SoundBank Id="2385628198" Language="SFX" Hash="3500731498">
 			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps</ObjectPath>
 			<ShortName>Footsteps</ShortName>
 			<Path>Footsteps.bnk</Path>
@@ -193,11 +193,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump" DurationType="OneShot" DurationMin="0.401767" DurationMax="0.401767">
+				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump" DurationType="OneShot" DurationMin="0.593813" DurationMax="0.593813">
 					<IncludedMemoryFiles>
-						<File Id="373150550" Language="SFX">
-							<ShortName>z_uk-pryzhki (online-audio-converter.com).wav</ShortName>
-							<Path>SFX\z_uk-pryzhki (online-audio-converter.com)_23E24764.wem</Path>
+						<File Id="463713910" Language="SFX">
+							<ShortName>411c45ceaa06c92 (online-audio-converter.com).wav</ShortName>
+							<Path>SFX\411c45ceaa06c92 (online-audio-converter.com)_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -209,6 +209,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2726058795" Name="Stop_FootstepGravel" ObjectPath="\Events\Default Work Unit\Stop_FootstepGravel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps">

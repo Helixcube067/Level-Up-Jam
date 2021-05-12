@@ -12,10 +12,8 @@ public class SceneMovement : MonoBehaviour
     public GameObject otherScreen;
     public Text progressText;
 
-
     public void Exit()
     {
-
         Debug.Log("Exited");
         Application.Quit();
     }
