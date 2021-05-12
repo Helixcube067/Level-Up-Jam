@@ -60,60 +60,12 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2385628198" Language="SFX" Hash="3500731498">
+		<SoundBank Id="2385628198" Language="SFX" Hash="2853336014">
 			<ObjectPath>\SoundBanks\Default Work Unit\Footsteps</ObjectPath>
 			<ShortName>Footsteps</ShortName>
 			<Path>Footsteps.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2860538893" Name="Play_FootstepConcrete" ObjectPath="\Events\Default Work Unit\Play_FootstepConcrete" DurationType="OneShot" DurationMin="0.229685" DurationMax="0.451885">
-					<IncludedMemoryFiles>
-						<File Id="61205068" Language="SFX">
-							<ShortName>Footstep_Walking_Concrete_04.wav</ShortName>
-							<Path>SFX\Footstep_Walking_Concrete_04_10C4C929.wem</Path>
-						</File>
-						<File Id="180468304" Language="SFX">
-							<ShortName>Footstep_Walking_Concrete_01.wav</ShortName>
-							<Path>SFX\Footstep_Walking_Concrete_01_10C4C929.wem</Path>
-						</File>
-						<File Id="294210279" Language="SFX">
-							<ShortName>Footstep_Walking_Concrete_06.wav</ShortName>
-							<Path>SFX\Footstep_Walking_Concrete_06_10C4C929.wem</Path>
-						</File>
-						<File Id="674771549" Language="SFX">
-							<ShortName>Footstep_Walking_Concrete_03.wav</ShortName>
-							<Path>SFX\Footstep_Walking_Concrete_03_10C4C929.wem</Path>
-						</File>
-						<File Id="753084490" Language="SFX">
-							<ShortName>Footstep_Walking_Concrete_02.wav</ShortName>
-							<Path>SFX\Footstep_Walking_Concrete_02_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="939773945" Name="Play_FootstepGravel" ObjectPath="\Events\Default Work Unit\Play_FootstepGravel" DurationType="OneShot" DurationMin="0.426128" DurationMax="0.650771">
-					<IncludedMemoryFiles>
-						<File Id="158582859" Language="SFX">
-							<ShortName>Footstep_Walking_Gravel_02.wav</ShortName>
-							<Path>SFX\Footstep_Walking_Gravel_02_10C4C929.wem</Path>
-						</File>
-						<File Id="358680511" Language="SFX">
-							<ShortName>Footstep_Walking_Gravel_03.wav</ShortName>
-							<Path>SFX\Footstep_Walking_Gravel_03_10C4C929.wem</Path>
-						</File>
-						<File Id="584523038" Language="SFX">
-							<ShortName>Footstep_Walking_Gravel_06.wav</ShortName>
-							<Path>SFX\Footstep_Walking_Gravel_06_10C4C929.wem</Path>
-						</File>
-						<File Id="658223240" Language="SFX">
-							<ShortName>Footstep_Walking_Gravel_01.wav</ShortName>
-							<Path>SFX\Footstep_Walking_Gravel_01_10C4C929.wem</Path>
-						</File>
-						<File Id="1033440212" Language="SFX">
-							<ShortName>Footstep_Walking_Gravel_04.wav</ShortName>
-							<Path>SFX\Footstep_Walking_Gravel_04_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Play_Footsteps" DurationType="OneShot" DurationMin="0.229685" DurationMax="0.650771">
+				<Event Id="3854155799" Name="Play_Footsteps" ObjectPath="\Events\Default Work Unit\Moving\Play_Footsteps" DurationType="OneShot" DurationMin="0.229685" DurationMax="0.650771">
 					<IncludedMemoryFiles>
 						<File Id="61205068" Language="SFX">
 							<ShortName>Footstep_Walking_Concrete_04.wav</ShortName>
@@ -172,44 +124,36 @@
 							<Path>SFX\Footstep_Walking_Gravel_04_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{04077332-7A28-4DFD-A44B-C47BE439CF3A}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{53F892CC-7E61-499C-A667-D32F334DA60C}">
+							<Media>
+								<File Id="158582859"/>
+								<File Id="358680511"/>
+								<File Id="584523038"/>
+								<File Id="658223240"/>
+								<File Id="1033440212"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{A9A6F271-9F71-4DE6-A2D7-E812B9ABCF46}">
+							<Media>
+								<File Id="61205068"/>
+								<File Id="180468304"/>
+								<File Id="294210279"/>
+								<File Id="674771549"/>
+								<File Id="753084490"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{04077332-7A28-4DFD-A44B-C47BE439CF3A}">
+							<Media>
+								<File Id="766168489"/>
+								<File Id="845843534"/>
+								<File Id="969139657"/>
+								<File Id="980325884"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
-				<Event Id="3408287295" Name="Play_FootstepsGrass" ObjectPath="\Events\Default Work Unit\Play_FootstepsGrass" DurationType="OneShot" DurationMin="0.268767" DurationMax="0.420912">
-					<IncludedMemoryFiles>
-						<File Id="766168489" Language="SFX">
-							<ShortName>4850d7b71b51f16 (online-audio-converter.com).wav</ShortName>
-							<Path>SFX\4850d7b71b51f16 (online-audio-converter.com)_5AA0146E.wem</Path>
-						</File>
-						<File Id="845843534" Language="SFX">
-							<ShortName>4850d7b71b51f16 (online-audio-converter.com).wav</ShortName>
-							<Path>SFX\4850d7b71b51f16 (online-audio-converter.com)_49DEAE39.wem</Path>
-						</File>
-						<File Id="969139657" Language="SFX">
-							<ShortName>4850d7b71b51f16 (online-audio-converter.com).wav</ShortName>
-							<Path>SFX\4850d7b71b51f16 (online-audio-converter.com)_94C725A7.wem</Path>
-						</File>
-						<File Id="980325884" Language="SFX">
-							<ShortName>4850d7b71b51f16 (online-audio-converter.com).wav</ShortName>
-							<Path>SFX\4850d7b71b51f16 (online-audio-converter.com)_AF2846B8.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Play_Jump" DurationType="OneShot" DurationMin="0.593813" DurationMax="0.593813">
-					<IncludedMemoryFiles>
-						<File Id="463713910" Language="SFX">
-							<ShortName>411c45ceaa06c92 (online-audio-converter.com).wav</ShortName>
-							<Path>SFX\411c45ceaa06c92 (online-audio-converter.com)_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="457516612" Name="Play_LongJump" ObjectPath="\Events\Default Work Unit\Play_LongJump" DurationType="OneShot" DurationMin="0.439835" DurationMax="0.698195">
-					<IncludedMemoryFiles>
-						<File Id="504130772" Language="SFX">
-							<ShortName>ecf1fac35ccc80b (online-audio-converter.com).wav</ShortName>
-							<Path>SFX\ecf1fac35ccc80b (online-audio-converter.com)_63321B33.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2726058795" Name="Stop_FootstepGravel" ObjectPath="\Events\Default Work Unit\Stop_FootstepGravel" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
 				<SwitchGroup Id="2385628198" Name="Footsteps" ObjectPath="\Switches\Default Work Unit\Footsteps">
@@ -221,16 +165,40 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="2580311907" Language="SFX" Hash="1595313339">
+		<SoundBank Id="2580311907" Language="SFX" Hash="837584158">
 			<ObjectPath>\SoundBanks\Default Work Unit\ForestMusic</ObjectPath>
 			<ShortName>ForestMusic</ShortName>
 			<Path>ForestMusic.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2129929147" Name="Play_Forest_Biom" ObjectPath="\Events\Default Work Unit\Play_Forest_Biom" DurationType="Infinite">
+				<Event Id="2129929147" Name="Play_Forest_Biom" ObjectPath="\Events\Default Work Unit\Music\Play_Forest_Biom" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="508301514" Language="SFX">
 							<ShortName>Forest (online-audio-converter.com).wav</ShortName>
 							<Path>SFX\Forest (online-audio-converter.com)_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4209206889" Name="Stop_Forest_Biom" ObjectPath="\Events\Default Work Unit\Music\Stop_Forest_Biom" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="3833651337" Language="SFX" Hash="3453380967">
+			<ObjectPath>\SoundBanks\Default Work Unit\Jump</ObjectPath>
+			<ShortName>Jump</ShortName>
+			<Path>Jump.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3689126666" Name="Play_Jump" ObjectPath="\Events\Default Work Unit\Moving\Play_Jump" DurationType="OneShot" DurationMin="0.593813" DurationMax="0.593813">
+					<IncludedMemoryFiles>
+						<File Id="463713910" Language="SFX">
+							<ShortName>411c45ceaa06c92 (online-audio-converter.com).wav</ShortName>
+							<Path>SFX\411c45ceaa06c92 (online-audio-converter.com)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="457516612" Name="Play_LongJump" ObjectPath="\Events\Default Work Unit\Moving\Play_LongJump" DurationType="OneShot" DurationMin="0.439835" DurationMax="0.698195">
+					<IncludedMemoryFiles>
+						<File Id="504130772" Language="SFX">
+							<ShortName>ecf1fac35ccc80b (online-audio-converter.com).wav</ShortName>
+							<Path>SFX\ecf1fac35ccc80b (online-audio-converter.com)_63321B33.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -241,7 +209,7 @@
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3306210749" Name="Play_Main_Menu" ObjectPath="\Events\Default Work Unit\Play_Main_Menu" DurationType="Infinite">
+				<Event Id="3306210749" Name="Play_Main_Menu" ObjectPath="\Events\Default Work Unit\Music\Play_Main_Menu" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="531307607" Language="SFX">
 							<ShortName>PuzzleGame2 (online-audio-converter.com).wav</ShortName>

@@ -13,10 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_FOOTSTEPCONCRETE = 2860538893U;
-        static const AkUniqueID PLAY_FOOTSTEPGRAVEL = 939773945U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
-        static const AkUniqueID PLAY_FOOTSTEPSGRASS = 3408287295U;
         static const AkUniqueID PLAY_FOREST_BIOM = 2129929147U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;
         static const AkUniqueID PLAY_LONGJUMP = 457516612U;
@@ -25,7 +22,7 @@ namespace AK
         static const AkUniqueID PLAY_MOVINGPLATFORM = 2603220653U;
         static const AkUniqueID PLAY_SLIDER = 1306435193U;
         static const AkUniqueID PLAY_SOUNDBUTTON = 2631470667U;
-        static const AkUniqueID STOP_FOOTSTEPGRAVEL = 2726058795U;
+        static const AkUniqueID STOP_FOREST_BIOM = 4209206889U;
     } // namespace EVENTS
 
     namespace SWITCHES
@@ -55,6 +52,7 @@ namespace AK
         static const AkUniqueID BUTTON = 977454165U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID FORESTMUSIC = 2580311907U;
+        static const AkUniqueID JUMP = 3833651337U;
         static const AkUniqueID MONEY = 758863303U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID PLATFORM = 4035573696U;

@@ -17,7 +17,7 @@ public class CharacterScript : MonoBehaviour
     [SerializeField] GameObject _UI_GameOverScreen;
 
     public Animator _Animator;
-
+   
     // Class variables
     Rigidbody2D _RigidBody;
     PolygonCollider2D _Collider;
@@ -62,7 +62,7 @@ public class CharacterScript : MonoBehaviour
         {
             if(IsGrounded())
             {
-                AkSoundEngine.PostEvent("Play_FootstepGravel", gameObject);
+                AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
             }
             else
             {

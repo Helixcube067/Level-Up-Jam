@@ -6,6 +6,7 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Asus\Downloads\"/>
 				<Property Name="Event Action List\{0A34FF82-394E-43F2-AA69-D879251C7B79}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{0E2F95A4-1E24-435F-9471-215075FCFF0A}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1C4D9F40-C063-4BD6-ADE1-58074A8BEE08}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{1DA013D7-8AC7-4F73-A2A5-4BE58690D98E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{372BE12F-0C20-4D99-AB0E-00DB0E888896}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3FB3FB84-7D87-4CD8-87EF-E7B52FC302B9}\x64_Expand States" Type="string" Value=""/>
@@ -18,6 +19,7 @@
 				<Property Name="Event Action List\{B13E43F0-69D5-49E5-B838-6C7B9B3AFBF7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E45CB8E6-5BE0-4DEC-99BE-A2F9D627E2F1}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{F9339DB0-2A00-4711-8F6E-3EE9E53028B9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FC729AED-9D52-45B0-A8FF-A30A15FB759E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -36,7 +38,7 @@
 				<Property Name="General\LatestPlatform" Type="string" Value="Mac"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value="BvDMKA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="qhLvHCgEdU+LItivmaPNOlKB3lCX7oxBkEKTIYdmxgg="/>
-				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="egzBa4O1GUuK394t0YQa++rpWwYy9tdLlClTLJ4gCAdc24LyMxbORJJFsTyrqBpziC5VCyLPGE+EKq18HitVjz2QPxNbQ6NAr5SRI7boPQk8g6jCTbmgRbXh923Dw7UBe7Sm/Ni3zkuIm/RbTpuw+g=="/>
+				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="egzBa4O1GUuK394t0YQa++rpWwYy9tdLlClTLJ4gCAdc24LyMxbORJJFsTyrqBpziC5VCyLPGE+EKq18HitVjz2QPxNbQ6NAr5SRI7boPQk8g6jCTbmgRbXh923Dw7UBe7Sm/Ni3zkuIm/RbTpuw+tlws0WNblBFoJODJc9Wwgo="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
 				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="Aq85E8VE20qSxOPAEwTjXwHv+If/////zxwm/U2r/UKupWBW2FyZHQHv+If/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>

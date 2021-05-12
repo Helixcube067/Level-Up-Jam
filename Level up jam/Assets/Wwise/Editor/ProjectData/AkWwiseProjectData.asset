@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e105d2d10c5944baa40445b8fba662e
     GuidInternal: 
-    m_lastTime: -8585807914056905141
+    m_lastTime: -8585807648676381555
     List:
     - name: Button
       guid: 7a0cc16b83b5194b8adfde2dd1841afb
@@ -110,6 +110,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 5cdb82f23316ce449245b13caba81a73
       Path: SoundBanks\Default Work Unit\ForestMusic
+    - name: Jump
+      guid: d970b3458d6e5045a0938325cf56c20a
+      id: 3833651337
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e105d2d10c5944baa40445b8fba662e
+      - ElementName: Jump
+        ObjectType: 7
+        guid: d970b3458d6e5045a0938325cf56c20a
+      Path: SoundBanks\Default Work Unit\Jump
     - name: Money
       guid: 882e550b22cf184f842aad7c1e2b558f
       id: 758863303
@@ -178,8 +192,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7fbcac2606e7fa4bb55587853f466049
     GuidInternal: 
-    m_lastTime: -8585807914057882532
+    m_lastTime: -8585807654370543990
     List:
+    - name: Moving
+      guid: cb374333898a8c4ea6691804e24c2df7
+      id: 2649703675
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Moving
+        ObjectType: 4
+        guid: cb374333898a8c4ea6691804e24c2df7
+      Path: Events\Default Work Unit\Moving
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: e0884fd866b6f2488060c54f7378c243
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
+      Path: Events\Default Work Unit\Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FootstepConcrete
       guid: 65357da7b4df78468bfbae2a0b5c4038
       id: 2860538893
@@ -190,10 +238,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Moving
+        ObjectType: 4
+        guid: cb374333898a8c4ea6691804e24c2df7
       - ElementName: Play_FootstepConcrete
         ObjectType: 3
         guid: 65357da7b4df78468bfbae2a0b5c4038
-      Path: Events\Default Work Unit\Play_FootstepConcrete
+      Path: Events\Default Work Unit\Moving\Play_FootstepConcrete
       maxAttenuation: 0
       maxDuration: 0.451885
       minDuration: 0.229685
@@ -207,10 +258,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Moving
+        ObjectType: 4
+        guid: cb374333898a8c4ea6691804e24c2df7
       - ElementName: Play_FootstepGravel
         ObjectType: 3
         guid: 94174d7ad8fff348bcdc5f11b2f1fd9b
-      Path: Events\Default Work Unit\Play_FootstepGravel
+      Path: Events\Default Work Unit\Moving\Play_FootstepGravel
       maxAttenuation: 0
       maxDuration: 0.650771
       minDuration: 0.426128
@@ -224,10 +278,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Moving
+        ObjectType: 4
+        guid: cb374333898a8c4ea6691804e24c2df7
       - ElementName: Play_Footsteps
         ObjectType: 3
         guid: 2fe12b37200c994dab0e00db0e888896
-      Path: Events\Default Work Unit\Play_Footsteps
+      Path: Events\Default Work Unit\Moving\Play_Footsteps
       maxAttenuation: 0
       maxDuration: 0.650771
       minDuration: 0.229685
@@ -241,10 +298,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Moving
+        ObjectType: 4
+        guid: cb374333898a8c4ea6691804e24c2df7
       - ElementName: Play_FootstepsGrass
         ObjectType: 3
         guid: b09d33f9002a11478f6e3ee9e53028b9
-      Path: Events\Default Work Unit\Play_FootstepsGrass
+      Path: Events\Default Work Unit\Moving\Play_FootstepsGrass
       maxAttenuation: 0
       maxDuration: 0.420912
       minDuration: 0.268767
@@ -258,10 +318,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
       - ElementName: Play_Forest_Biom
         ObjectType: 3
         guid: 84fbb33f877dd84c87efe7b52fc302b9
-      Path: Events\Default Work Unit\Play_Forest_Biom
+      Path: Events\Default Work Unit\Music\Play_Forest_Biom
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -275,10 +338,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Moving
+        ObjectType: 4
+        guid: cb374333898a8c4ea6691804e24c2df7
       - ElementName: Play_Jump
         ObjectType: 3
         guid: 82ff340a4e39f243aa69d879251c7b79
-      Path: Events\Default Work Unit\Play_Jump
+      Path: Events\Default Work Unit\Moving\Play_Jump
       maxAttenuation: 0
       maxDuration: 0.593813
       minDuration: 0.593813
@@ -292,10 +358,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Moving
+        ObjectType: 4
+        guid: cb374333898a8c4ea6691804e24c2df7
       - ElementName: Play_LongJump
         ObjectType: 3
         guid: a4952f0e241e5f439471215075fcff0a
-      Path: Events\Default Work Unit\Play_LongJump
+      Path: Events\Default Work Unit\Moving\Play_LongJump
       maxAttenuation: 0
       maxDuration: 0.698195
       minDuration: 0.439835
@@ -309,10 +378,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
       - ElementName: Play_Main_Menu
         ObjectType: 3
         guid: cb2c3faedaece04e82b65ef22dcb9918
-      Path: Events\Default Work Unit\Play_Main_Menu
+      Path: Events\Default Work Unit\Music\Play_Main_Menu
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -394,10 +466,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
       - ElementName: Play_Winter_Biom
         ObjectType: 3
         guid: 85adc358d8e1be498c46d3d7f9f730d0
-      Path: Events\Default Work Unit\Play_Winter_Biom
+      Path: Events\Default Work Unit\Music\Play_Winter_Biom
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -411,10 +486,33 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Moving
+        ObjectType: 4
+        guid: cb374333898a8c4ea6691804e24c2df7
       - ElementName: Stop_FootstepGravel
         ObjectType: 3
         guid: d713a01dc78a734fa2a54be58690d98e
-      Path: Events\Default Work Unit\Stop_FootstepGravel
+      Path: Events\Default Work Unit\Moving\Stop_FootstepGravel
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Forest_Biom
+      guid: ed9a72fc529db045a8ffa30a15fb759e
+      id: 4209206889
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
+      - ElementName: Stop_Forest_Biom
+        ObjectType: 3
+        guid: ed9a72fc529db045a8ffa30a15fb759e
+      Path: Events\Default Work Unit\Music\Stop_Forest_Biom
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -472,7 +570,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5e990e018b65054c9b1fafc17dfa39f0
     GuidInternal: 
-    m_lastTime: -8585808451039396174
+    m_lastTime: -8585807650466867585
     List:
     - name: Footsteps
       guid: 10af3d8d95fc8e448304921ac454c411
@@ -555,7 +653,7 @@ MonoBehaviour:
     m_lastTime: -8585808451039396174
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000080000000f000000100000001700000018000000190000001a0000001b00000020000000210000002200000023000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

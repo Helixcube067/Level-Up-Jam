@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2129929147	Play_Forest_Biom			\Default Work Unit\Play_Forest_Biom	
+	4209206889	Stop_Forest_Biom			\Default Work Unit\Stop_Forest_Biom	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	508301514	Forest Biom	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Forest (online-audio-converter.com)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Forest Biom		7059520

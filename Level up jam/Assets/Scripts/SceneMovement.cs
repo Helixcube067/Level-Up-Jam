@@ -20,6 +20,7 @@ public class SceneMovement : MonoBehaviour
 
     public void LoadLevel(string sceneName)
     {
+        AkSoundEngine.PostEvent("Stop_Forest_Biom", gameObject);
         StartCoroutine(LoadAsyncly(sceneName));
     }
 
