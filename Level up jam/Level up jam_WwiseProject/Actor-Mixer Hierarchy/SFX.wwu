@@ -215,7 +215,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-16</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -244,6 +244,29 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="ecf1fac35ccc80b (online-audio-converter_com)" ID="{007CA2A3-453A-4C4E-9B73-ED6833A1E953}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Jump2" ID="{A804DDEF-ADC7-4C95-9081-A1D0573247F7}" ShortID="437477695">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="411c45ceaa06c92 (online-audio-converter_com)" ID="{E58A1C71-45A4-43DB-9D15-46C46C9B207D}">
+							<Language>SFX</Language>
+							<AudioFile>411c45ceaa06c92 (online-audio-converter.com).wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="463713910"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="411c45ceaa06c92 (online-audio-converter_com)" ID="{E58A1C71-45A4-43DB-9D15-46C46C9B207D}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

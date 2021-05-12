@@ -118,7 +118,7 @@
 						<Action Name="" ID="{A96E673C-2D21-42BF-93CF-FE54F1F0353E}" ShortID="1064008349">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Jump" ID="{F30C12BE-FC5F-4B78-953A-B194060FB8C5}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
+									<ObjectRef Name="Jump2" ID="{A804DDEF-ADC7-4C95-9081-A1D0573247F7}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -141,6 +141,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="LongJump" ID="{C06F8664-92FA-4865-8289-78E19CB7EC96}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_FootstepGravel" ID="{1DA013D7-8AC7-4F73-A2A5-4BE58690D98E}">
+					<ChildrenList>
+						<Action Name="" ID="{04DF4D00-17D9-4F69-B0F8-CB6B890B0B80}" ShortID="215771742">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FootstepGravel" ID="{43D139C0-7791-4545-9C72-FC1E3F839B73}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	457516612	Play_LongJump			\Default Work Unit\Play_LongJump	
 	939773945	Play_FootstepGravel			\Default Work Unit\Play_FootstepGravel	
+	2726058795	Stop_FootstepGravel			\Default Work Unit\Stop_FootstepGravel	
 	2860538893	Play_FootstepConcrete			\Default Work Unit\Play_FootstepConcrete	
 	3408287295	Play_FootstepsGrass			\Default Work Unit\Play_FootstepsGrass	
 	3689126666	Play_Jump			\Default Work Unit\Play_Jump	
@@ -20,7 +21,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	180468304	Footstep_Walking_Concrete_01	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Footstep_Walking_Concrete_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepConcrete\Footstep_Walking_Concrete_01		29734
 	294210279	Footstep_Walking_Concrete_06	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Footstep_Walking_Concrete_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepConcrete\Footstep_Walking_Concrete_06		38712
 	358680511	Footstep_Walking_Gravel_03	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Footstep_Walking_Gravel_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepGravel\Footstep_Walking_Gravel_03		45982
-	373150550	Jump	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\z_uk-pryzhki (online-audio-converter.com)_23E24764.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Jump		70936
+	463713910	Jump2	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\411c45ceaa06c92 (online-audio-converter.com)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Jump2		114076
 	504130772	LongJump	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\ecf1fac35ccc80b (online-audio-converter.com)_63321B33.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\LongJump		57852
 	584523038	Footstep_Walking_Gravel_06	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Footstep_Walking_Gravel_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepGravel\Footstep_Walking_Gravel_06		52844
 	658223240	Footstep_Walking_Gravel_01	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Footstep_Walking_Gravel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepGravel\Footstep_Walking_Gravel_01		47628

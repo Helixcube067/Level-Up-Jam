@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1b477a2bcc28b4ca1570c563ec8bb5, type: 3}
+  m_Name: 1DA013D7-8AC7-4F73-A2A5-4BE58690D98E
+  m_EditorClassIdentifier: 
+  objectName: Stop_FootstepGravel
+  id: 2726058795
+  guid: 1DA013D7-8AC7-4F73-A2A5-4BE58690D98E

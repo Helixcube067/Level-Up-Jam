@@ -54,6 +54,11 @@ public class CharacterScript : MonoBehaviour
             }
         }
     }
+
+
+
+
+
    
     void handleMovement()
     {        
@@ -61,7 +66,7 @@ public class CharacterScript : MonoBehaviour
         float HorizontalMovement = Input.GetAxisRaw("Horizontal") * _MovementSpeed * Time.deltaTime ;// Horizontal axis controlled by A and D
         if ((Input.GetAxisRaw("Horizontal") > 0.1 || Input.GetAxisRaw("Horizontal") < -0.1) && !_PlayingFootstep)
         {
-            AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
+            AkSoundEngine.PostEvent("Play_FootstepGravel", gameObject);
             _PlayingFootstep = true;
         }
         Vector2 Movement = new Vector2(HorizontalMovement, _RigidBody.velocity.y);
@@ -91,6 +96,7 @@ public class CharacterScript : MonoBehaviour
         RaycastHit2D hit = Physics2D.BoxCast(_Collider.bounds.center, _Collider.bounds.size, 0, Vector2.down, 0.1f, _Floor);
         if (Input.GetButtonDown("Jump") && hit.collider) // default key set to space
         {
+            
             AkSoundEngine.PostEvent("Play_Jump", gameObject);
             _RigidBody.AddForce(new Vector2(0, JumpHeight), ForceMode2D.Impulse);
         }

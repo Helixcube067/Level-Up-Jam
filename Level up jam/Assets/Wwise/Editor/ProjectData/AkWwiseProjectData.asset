@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e105d2d10c5944baa40445b8fba662e
     GuidInternal: 
-    m_lastTime: -8585808418690779822
+    m_lastTime: -8585808020174536993
     List:
     - name: Button
       guid: 7a0cc16b83b5194b8adfde2dd1841afb
@@ -178,7 +178,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7fbcac2606e7fa4bb55587853f466049
     GuidInternal: 
-    m_lastTime: -8585808413610562424
+    m_lastTime: -8585807942479306547
     List:
     - name: Play_FootstepConcrete
       guid: 65357da7b4df78468bfbae2a0b5c4038
@@ -280,8 +280,8 @@ MonoBehaviour:
         guid: 82ff340a4e39f243aa69d879251c7b79
       Path: Events\Default Work Unit\Play_Jump
       maxAttenuation: 0
-      maxDuration: 0.401767
-      minDuration: 0.401767
+      maxDuration: 0.593813
+      minDuration: 0.593813
     - name: Play_LongJump
       guid: a4952f0e241e5f439471215075fcff0a
       id: 457516612
@@ -401,6 +401,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_FootstepGravel
+      guid: d713a01dc78a734fa2a54be58690d98e
+      id: 2726058795
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Stop_FootstepGravel
+        ObjectType: 3
+        guid: d713a01dc78a734fa2a54be58690d98e
+      Path: Events\Default Work Unit\Stop_FootstepGravel
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -538,7 +555,7 @@ MonoBehaviour:
     m_lastTime: -8585808451039396174
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
