@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: 7174b10f83ba814b8171af47bfd910ff
     GuidInternal: 
-    m_lastTime: -8585808451039386201
+    m_lastTime: -8585807625905332394
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: cf463501f43f34429d6937ec368ec570
     GuidInternal: 
-    m_lastTime: -8585808451045290405
+    m_lastTime: -8585807625910817727
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e105d2d10c5944baa40445b8fba662e
     GuidInternal: 
-    m_lastTime: -8585807648676381555
+    m_lastTime: -8585807527701342659
     List:
     - name: Button
       guid: 7a0cc16b83b5194b8adfde2dd1841afb
@@ -192,7 +192,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7fbcac2606e7fa4bb55587853f466049
     GuidInternal: 
-    m_lastTime: -8585807654370543990
+    m_lastTime: -8585807527702589413
     List:
     - name: Moving
       guid: cb374333898a8c4ea6691804e24c2df7
@@ -246,8 +246,8 @@ MonoBehaviour:
         guid: 65357da7b4df78468bfbae2a0b5c4038
       Path: Events\Default Work Unit\Moving\Play_FootstepConcrete
       maxAttenuation: 0
-      maxDuration: 0.451885
-      minDuration: 0.229685
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FootstepGravel
       guid: 94174d7ad8fff348bcdc5f11b2f1fd9b
       id: 939773945
@@ -266,8 +266,8 @@ MonoBehaviour:
         guid: 94174d7ad8fff348bcdc5f11b2f1fd9b
       Path: Events\Default Work Unit\Moving\Play_FootstepGravel
       maxAttenuation: 0
-      maxDuration: 0.650771
-      minDuration: 0.426128
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Footsteps
       guid: 2fe12b37200c994dab0e00db0e888896
       id: 3854155799
@@ -306,8 +306,8 @@ MonoBehaviour:
         guid: b09d33f9002a11478f6e3ee9e53028b9
       Path: Events\Default Work Unit\Moving\Play_FootstepsGrass
       maxAttenuation: 0
-      maxDuration: 0.420912
-      minDuration: 0.268767
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Forest_Biom
       guid: 84fbb33f877dd84c87efe7b52fc302b9
       id: 2129929147
@@ -494,8 +494,8 @@ MonoBehaviour:
         guid: d713a01dc78a734fa2a54be58690d98e
       Path: Events\Default Work Unit\Moving\Stop_FootstepGravel
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_Forest_Biom
       guid: ed9a72fc529db045a8ffa30a15fb759e
       id: 4209206889
@@ -528,7 +528,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b9b62c63607cd84c9e961aa1db8e374b
     GuidInternal: 
-    m_lastTime: -8585808451050918392
+    m_lastTime: -8585807625915540161
     List:
     - name: Menu_Music
       guid: 5ac017610a64344bacc101988a71b4ad
@@ -556,7 +556,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: fe9ab34330fceb419fb257f75cb36a14
     GuidInternal: 
-    m_lastTime: -8585808451039406150
+    m_lastTime: -8585807625905352338
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -570,7 +570,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 5e990e018b65054c9b1fafc17dfa39f0
     GuidInternal: 
-    m_lastTime: -8585807650466867585
+    m_lastTime: -8585807625905342368
     List:
     - name: Footsteps
       guid: 10af3d8d95fc8e448304921ac454c411
@@ -650,7 +650,7 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: 24ba17e7d037af4ebe60011f96e16c9a
     GuidInternal: 
-    m_lastTime: -8585808451039396174
+    m_lastTime: -8585807625905342368
     List: []
   ExpandedFileSystemItemIds: 
   ExpandedWaapiItemIds: 01000000050000000600000007000000080000000f000000100000001700000018000000190000001a0000001b00000020000000210000002200000023000000
