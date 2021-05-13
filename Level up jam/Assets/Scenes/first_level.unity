@@ -875,7 +875,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2820501068089234136, guid: 2b5bd3ea893a3f64f853901fe64efefa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2b5bd3ea893a3f64f853901fe64efefa, type: 3}
 --- !u!1 &943358008
 GameObject:
@@ -3230,6 +3231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2820501068089234137, guid: 2b5bd3ea893a3f64f853901fe64efefa, type: 3}
+    - {fileID: 2820501068089234136, guid: 2b5bd3ea893a3f64f853901fe64efefa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2b5bd3ea893a3f64f853901fe64efefa, type: 3}
 --- !u!1001 &3957017414771402266
 PrefabInstance:
@@ -3497,6 +3499,10 @@ PrefabInstance:
     - target: {fileID: 5943934919676414442, guid: 1cf110d5a61cb2e47b2b4d7fe5d1ffba, type: 3}
       propertyPath: m_Name
       value: Game Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953945201800390453, guid: 1cf110d5a61cb2e47b2b4d7fe5d1ffba, type: 3}
+      propertyPath: _DefaultMusic
+      value: ForestBiome
       objectReference: {fileID: 0}
     - target: {fileID: 7953945201800390453, guid: 1cf110d5a61cb2e47b2b4d7fe5d1ffba, type: 3}
       propertyPath: loadingScreen

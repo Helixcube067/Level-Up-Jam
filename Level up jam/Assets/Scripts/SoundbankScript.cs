@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class SoundbankScript : MonoBehaviour
 {
+    public AK.Wwise.RTPC _Volume;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        _Volume.SetGlobalValue(1f);
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
 
     // Conditional sounds
@@ -33,6 +34,7 @@ public class SoundbankScript : MonoBehaviour
         }
     }
 
+    // This function should also stop the current background music and transition
     public void PlayBackgroundSound(string biome)
     {
         if(biome == "MainMenu")
@@ -97,7 +99,8 @@ public class SoundbankScript : MonoBehaviour
 
     public void PlaySoundFootstepGrass()
     {
-        AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
+        AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
+       // AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
     }
 
     public void PlaySoundFootstepGravel()

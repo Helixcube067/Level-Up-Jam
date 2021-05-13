@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8771709022303058056}
+  - component: {fileID: 1345537503860244975}
   - component: {fileID: 1030642251016829886}
   - component: {fileID: 1030642251016829887}
   - component: {fileID: 1030642251016829885}
@@ -17,6 +18,7 @@ GameObject:
   - component: {fileID: 1030642251016829858}
   - component: {fileID: 1030642251016829883}
   - component: {fileID: 5121540947263420740}
+  - component: {fileID: 1832243272246599616}
   - component: {fileID: 3495610060399237000}
   m_Layer: 0
   m_Name: SoundBank
@@ -39,6 +41,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1345537503860244975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5966804292968681364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32c8de9876214ad48926af4527f583d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
 --- !u!114 &1030642251016829886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,6 +245,30 @@ MonoBehaviour:
   unloadTriggerList: 
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &1832243272246599616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5966804292968681364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17aa9997ca75ab3478487cce29a08a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5d9a9865df523544fa61b0342320a003, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!114 &3495610060399237000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,3 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0cfa645b517c99438561ddd5c76b83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Volume:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c63d480c49e55ee49b216c42f4f6ad74, type: 2}
