@@ -12,30 +12,30 @@ public class CharacterScript : MonoBehaviour
     [SerializeField] LayerMask _Floor;
     [SerializeField] float _InitialBodyTemperature;
     [SerializeField] float _JumpHeight = 7.0f;
-    [SerializeField] Text _BodyTemperatureText;
-    [SerializeField] GameObject _UI_IngameStuff;
-    [SerializeField] GameObject _UI_GameOverScreen;
-    [SerializeField] Slider _healthSlider;
-    [SerializeField] GameObject _replayMenu;
+    [SerializeField] Slider _HealthSlider;
+    [SerializeField] GameObject _HUD;
+    [SerializeField] GameObject _ReplayMenu;
 
     public Animator _Animator;
    
     // Class variables
     Rigidbody2D _RigidBody;
-    PolygonCollider2D _Collider;
+    //PolygonCollider2D _Collider;
+    BoxCollider2D _Collider;
+    Text _BodyTemperatureText;
     float _BodyTemperature;
     float _FootstepTimer;
-    bool _PlayingFootstep;
-    double _health = 100.0;
-    
     bool _PlayingMovementSound;
+    double _health = 100.0;    
 
     // Start is called before the first frame update
     void Start()
     {
         _BodyTemperature = _InitialBodyTemperature;
         _RigidBody = GetComponent<Rigidbody2D>();
-        _Collider = GetComponent<PolygonCollider2D>();
+        //_Collider = GetComponent<PolygonCollider2D>();
+        _Collider = GetComponent<BoxCollider2D>();
+        _BodyTemperatureText = GameObject.Find("TemperatureValue").GetComponent<Text>();
         _BodyTemperatureText.text = _BodyTemperature.ToString();
         _FootstepTimer = 0.0f;
         _PlayingMovementSound = false;
@@ -59,20 +59,20 @@ public class CharacterScript : MonoBehaviour
         //Once below 30 you start losing health.
         //Once above 42 you start losing health.
         if (_BodyTemperature >= 42)
-            _health -= 0.01;
-        else if (_BodyTemperature <= -5) { //made this -5 for testing health drain
-            _health -= 0.01;
-        }            
-        _healthSlider.value = (int)_health;
+            _health -= 1*Time.deltaTime;
+        else if (_BodyTemperature <= 30) { //made this -5 for testing health drain
+            _health -= 1*Time.deltaTime;
+        }
         DeathCheck();
+        //_HealthSlider.value = (int)_health;
     }
    
     void handleMovement()
     {
-        // Horizontal
-        float HorizontalInput = Input.GetAxisRaw("Horizontal");
+        // Horizontal Movement
+        float HorizontalInput = Input.GetAxisRaw("Horizontal"); // Horizontal axis controlled by A and D
         _Animator.SetFloat("Speed", Mathf.Abs(HorizontalInput) * Convert.ToInt32(IsGrounded()));
-        float HorizontalMovement = HorizontalInput * _MovementSpeed * Time.deltaTime ;// Horizontal axis controlled by A and D
+        float HorizontalMovement = HorizontalInput * _MovementSpeed * Time.deltaTime ; 
         if ( (HorizontalInput > 0.1 || HorizontalInput < -0.1) && !_PlayingMovementSound)
         {
             if(IsGrounded())
@@ -87,6 +87,8 @@ public class CharacterScript : MonoBehaviour
         }
         Vector2 Movement = new Vector2(HorizontalMovement, _RigidBody.velocity.y);
         _RigidBody.velocity = Vector2.Lerp(_RigidBody.velocity, Movement, _SmoothMovement); // Smooths stopping/starting movement
+
+        // Flip the sprite depending on walk direction
         if(_RigidBody.velocity.x > 0.5)
         {            
             gameObject.transform.localScale = new Vector3(1, 1, 1);
@@ -95,7 +97,6 @@ public class CharacterScript : MonoBehaviour
         {            
             _RigidBody.transform.localScale = new Vector3(-1, 1, 1);
         }
-        _RigidBody.rotation = 0;
         
         // Make it impossible to walk back outside camera view
         float CameraHorizontalHalfSize = Camera.main.orthographicSize * Screen.width / Screen.height;
@@ -107,6 +108,7 @@ public class CharacterScript : MonoBehaviour
         // Jump
         if (IsGrounded() && Input.GetButtonDown("Jump")) // default key set to space
         {
+            _Animator.SetTrigger("Jump");
             AkSoundEngine.PostEvent("Play_Jump", gameObject);
             _RigidBody.AddForce(new Vector2(0, _JumpHeight), ForceMode2D.Impulse);
         }
@@ -126,33 +128,20 @@ public class CharacterScript : MonoBehaviour
         }
     }
    
-    void OnCollisionEnter2D(Collision2D collision)
+    void DeathCheck() 
     {
-        // Death
-        if (collision.gameObject.tag == "Death")
+        if (gameObject.transform.position.y <= -5 || _health == 0) 
         {
-            Die();
-        }
-    }
-    
-    void Die()
-    {
-        //TODO: Play death sound, show endgame screen?
-        // Sending you back to the Title Screen when you die for now;
-        Debug.Log("Die");
-        _UI_IngameStuff.gameObject.SetActive(false);
-        _UI_GameOverScreen.gameObject.SetActive(true);
-    }
-    public void DeathCheck() {
-        if (gameObject.transform.position.y <= -5 || _health == 0) {
             Debug.Log("Pos: " + gameObject.transform.position.y);
             Debug.Log("Health: " + _health);
             Time.timeScale = 0f;
-            _replayMenu.SetActive(true);
+            _HUD.gameObject.SetActive(false);
+            _ReplayMenu.gameObject.SetActive(true);
         }
     }
 
-    public float GetBodyTemp() {
+    public float GetBodyTemp()
+    {
         return _BodyTemperature;
     }
 

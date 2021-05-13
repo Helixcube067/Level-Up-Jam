@@ -26,9 +26,13 @@ public class TemperatureDoors : MonoBehaviour
             else
             {
                 //AkSoundEngine.PostEvent("Play_Money", gameObject); TODO: play sound when sound is available
-                _Collider.enabled = false;
                 _Animator.speed = 1;
+                Invoke("DisableCollider", 0.5f);
             }
         }
+    }
+    void DisableCollider()
+    {
+        _Collider.enabled = false;
     }
 }
