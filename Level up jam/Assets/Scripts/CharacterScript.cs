@@ -15,6 +15,7 @@ public class CharacterScript : MonoBehaviour
     [SerializeField] Slider _HealthSlider;
     [SerializeField] GameObject _HUD;
     [SerializeField] GameObject _ReplayMenu;
+    [SerializeField] GameObject _WinMenu;
 
     public Animator _Animator;
    
@@ -39,6 +40,7 @@ public class CharacterScript : MonoBehaviour
         _BodyTemperatureText.text = _BodyTemperature.ToString();
         _FootstepTimer = 0.0f;
         _PlayingMovementSound = false;
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
@@ -127,6 +129,16 @@ public class CharacterScript : MonoBehaviour
             _BodyTemperatureText.text = _BodyTemperature.ToString();
         }
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Finish")
+        {
+            _HUD.gameObject.SetActive(false);
+            _WinMenu.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
    
     void DeathCheck() 
     {
@@ -134,9 +146,9 @@ public class CharacterScript : MonoBehaviour
         {
             Debug.Log("Pos: " + gameObject.transform.position.y);
             Debug.Log("Health: " + _health);
-            Time.timeScale = 0f;
             _HUD.gameObject.SetActive(false);
-            _ReplayMenu.gameObject.SetActive(true);
+            _ReplayMenu.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 

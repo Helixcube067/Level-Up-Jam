@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2769043705201348795}
   - component: {fileID: 6394206038542754343}
   - component: {fileID: 5849075247233470308}
-  - component: {fileID: 5738294055172595617}
-  - component: {fileID: 2875304200639546938}
+  - component: {fileID: 7509600494905715258}
+  - component: {fileID: 9058741862071518195}
   m_Layer: 5
   m_Name: Title screen button
   m_TagString: Untagged
@@ -135,7 +135,7 @@ MonoBehaviour:
           m_StringArgument: Title Screen
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5738294055172595617
+--- !u!114 &7509600494905715258
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,7 +157,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &2875304200639546938
+--- !u!114 &9058741862071518195
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -440,8 +440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.0433, y: -43.613}
-  m_SizeDelta: {x: 435.3736, y: 87.2255}
+  m_AnchoredPosition: {x: -9, y: -24.383}
+  m_SizeDelta: {x: 355.8922, y: 48.7668}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5050563176680000459
 CanvasRenderer:
@@ -574,7 +574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1963882876490904959}
   m_Layer: 0
-  m_Name: Replay Screen
+  m_Name: EndGame Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -899,8 +899,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -122}
-  m_SizeDelta: {x: 599.6807, y: 169.7474}
+  m_AnchoredPosition: {x: -2.7948, y: -122}
+  m_SizeDelta: {x: 901.4977, y: 169.7474}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2778252240849639252
 CanvasRenderer:
@@ -943,4 +943,6 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You lost...
+  m_Text: 'Congratulations
+
+    You won!!!'

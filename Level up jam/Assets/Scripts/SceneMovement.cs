@@ -8,9 +8,7 @@ public class SceneMovement : MonoBehaviour
     /* Contains all of the scene loading functions to move form scene to scene
      */ 
     public GameObject loadingScreen;
-    public Slider slider;
     public GameObject otherScreen;
-    public Text progressText;
 
     public void Exit()
     {
@@ -34,8 +32,8 @@ public class SceneMovement : MonoBehaviour
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
             //Debug.Log(operation.progress);
-            slider.value = progress;
-            progressText.text = "Loading..." + progress * 100f + "%";
+            GameObject.Find("Loading Slider").GetComponent<Slider>().value = progress;
+            GameObject.Find("Progress Text").GetComponent<Text>().text = "Loading..." + progress * 100f + "%";
             yield return null;
         }
     }

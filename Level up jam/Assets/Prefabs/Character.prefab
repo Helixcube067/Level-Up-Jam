@@ -131,7 +131,8 @@ MonoBehaviour:
   _JumpHeight: 7
   _HealthSlider: {fileID: 0}
   _HUD: {fileID: 8649966381271513498, guid: b537ed40b1abaa94687d98f0adc83ff1, type: 3}
-  _ReplayMenu: {fileID: 5225877361394457922, guid: d715d2c5122f665448d4487af3e5c74e, type: 3}
+  _ReplayMenu: {fileID: 7318646104994369526, guid: ba8757ee3f960ab44bf49f6bb39ff786, type: 3}
+  _WinMenu: {fileID: 7318646104994369526, guid: 157a2edd9d8e54a4499508ca721b97b1, type: 3}
   _Animator: {fileID: 7867502606954061986}
 --- !u!61 &6134952860652569565
 BoxCollider2D:
