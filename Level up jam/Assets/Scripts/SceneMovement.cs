@@ -9,6 +9,21 @@ public class SceneMovement : MonoBehaviour
      */ 
     public GameObject loadingScreen;
     public GameObject otherScreen;
+    public string _DefaultMusic;
+    private SoundbankScript _Soundbank;
+
+    void Start()
+    {
+        _Soundbank = GameObject.Find("SoundBank").GetComponent<SoundbankScript>();
+        if(_DefaultMusic == "MainMenu")
+        {
+            _Soundbank.PlayMainMenu();
+        }
+        else if(_DefaultMusic == "ForestBiome")
+        {
+            _Soundbank.PlayForestBiome();
+        }
+    }
 
     public void Exit()
     {
@@ -18,7 +33,8 @@ public class SceneMovement : MonoBehaviour
 
     public void LoadLevel(string sceneName)
     {
-        AkSoundEngine.PostEvent("Stop_Forest_Biom", gameObject);
+        _Soundbank.StopForestBiome();
+        //_Soundbank.StopMainMenu();
         StartCoroutine(LoadAsyncly(sceneName));
     }
 
@@ -27,6 +43,14 @@ public class SceneMovement : MonoBehaviour
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         loadingScreen.SetActive(true);
         otherScreen.SetActive(false);
+        if(sceneName == "first_level")
+        {
+            _Soundbank.PlayForestBiome();
+        }
+        if(sceneName == "Title Screen")
+        {
+            _Soundbank.PlayMainMenu();
+        }
         Time.timeScale = 0f;
         while (operation.isDone == false)
         {

@@ -17,6 +17,8 @@ public class CharacterScript : MonoBehaviour
     [SerializeField] GameObject _ReplayMenu;
     [SerializeField] GameObject _WinMenu;
 
+    private SoundbankScript _Soundbank;
+
     public Animator _Animator;
    
     // Class variables
@@ -34,13 +36,13 @@ public class CharacterScript : MonoBehaviour
     {
         _BodyTemperature = _InitialBodyTemperature;
         _RigidBody = GetComponent<Rigidbody2D>();
-        //_Collider = GetComponent<PolygonCollider2D>();
         _Collider = GetComponent<BoxCollider2D>();
         _BodyTemperatureText = GameObject.Find("TemperatureValue").GetComponent<Text>();
         _BodyTemperatureText.text = _BodyTemperature.ToString();
         _FootstepTimer = 0.0f;
         _PlayingMovementSound = false;
         Time.timeScale = 1f;
+        _Soundbank = GameObject.Find("SoundBank").GetComponent<SoundbankScript>();
     }
 
     // Update is called once per frame
@@ -79,11 +81,12 @@ public class CharacterScript : MonoBehaviour
         {
             if(IsGrounded())
             {
-                AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
+                //_Soundbank.PlaySoundFootstepGravel();
+                _Soundbank.PlaySoundFootstepGrass();
             }
             else
             {
-                AkSoundEngine.PostEvent("Play_LongJump", gameObject);
+                _Soundbank.PlaySoundFloat();
             }
             _PlayingMovementSound = true;
         }
@@ -111,7 +114,7 @@ public class CharacterScript : MonoBehaviour
         if (IsGrounded() && Input.GetButtonDown("Jump")) // default key set to space
         {
             _Animator.SetTrigger("Jump");
-            AkSoundEngine.PostEvent("Play_Jump", gameObject);
+            _Soundbank.PlaySoundJump();
             _RigidBody.AddForce(new Vector2(0, _JumpHeight), ForceMode2D.Impulse);
         }
     }

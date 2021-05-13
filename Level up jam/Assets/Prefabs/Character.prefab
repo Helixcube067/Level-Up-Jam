@@ -14,9 +14,7 @@ GameObject:
   - component: {fileID: 7867502606954061991}
   - component: {fileID: 6134952860652569565}
   - component: {fileID: 7867502606954061988}
-  - component: {fileID: 7867502606954061984}
   - component: {fileID: 7867502606954061986}
-  - component: {fileID: 7867502606954061990}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -208,28 +206,6 @@ PolygonCollider2D:
       - {x: -0.14999999, y: -0.45}
       - {x: -0.10636616, y: -0.580143}
     - - {x: 0.04, y: 0.32999998}
---- !u!114 &7867502606954061984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001630995009082783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99aed91dc76e6b3478d587ec5d13794b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!95 &7867502606954061986
 Animator:
   serializedVersion: 3
@@ -249,27 +225,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &7867502606954061990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001630995009082783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17aa9997ca75ab3478487cce29a08a85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5d9a9865df523544fa61b0342320a003, type: 2}
-  decodeBank: 0
-  loadAsynchronous: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 
-  bankNameInternal: 
-  valueGuidInternal: 
