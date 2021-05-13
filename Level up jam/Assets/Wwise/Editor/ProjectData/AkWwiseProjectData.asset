@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: cf463501f43f34429d6937ec368ec570
     GuidInternal: 
-    m_lastTime: -8585807625910817727
+    m_lastTime: -8585806681130475023
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e105d2d10c5944baa40445b8fba662e
     GuidInternal: 
-    m_lastTime: -8585807527701342659
+    m_lastTime: -8585806668755660809
     List:
     - name: Button
       guid: 7a0cc16b83b5194b8adfde2dd1841afb
@@ -82,6 +82,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 7a0cc16b83b5194b8adfde2dd1841afb
       Path: SoundBanks\Default Work Unit\Button
+    - name: DesertMusic
+      guid: d1e6637bc1110c46acdb0603eb05dfb1
+      id: 1643119271
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e105d2d10c5944baa40445b8fba662e
+      - ElementName: DesertMusic
+        ObjectType: 7
+        guid: d1e6637bc1110c46acdb0603eb05dfb1
+      Path: SoundBanks\Default Work Unit\DesertMusic
     - name: Footsteps
       guid: eae95b0632f6d74b9429532c9e200807
       id: 2385628198
@@ -180,6 +194,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: 7bb4a6fcd8b7ce4b889bf45b4e9bb0fa
       Path: SoundBanks\Default Work Unit\Slider
+    - name: WinterMusic
+      guid: c0bda015ee50da4994161b5cbde8268f
+      id: 3072862491
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e105d2d10c5944baa40445b8fba662e
+      - ElementName: WinterMusic
+        ObjectType: 7
+        guid: c0bda015ee50da4994161b5cbde8268f
+      Path: SoundBanks\Default Work Unit\WinterMusic
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -192,7 +220,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7fbcac2606e7fa4bb55587853f466049
     GuidInternal: 
-    m_lastTime: -8585807527702589413
+    m_lastTime: -8585806670037113867
     List:
     - name: Moving
       guid: cb374333898a8c4ea6691804e24c2df7
@@ -228,6 +256,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Desert_Boim
+      guid: e6bb14efd07e3f429fed65e25f2e9902
+      id: 3351022179
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
+      - ElementName: Play_Desert_Boim
+        ObjectType: 3
+        guid: e6bb14efd07e3f429fed65e25f2e9902
+      Path: Events\Default Work Unit\Music\Play_Desert_Boim
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_FootstepConcrete
       guid: 65357da7b4df78468bfbae2a0b5c4038
       id: 2860538893
@@ -246,8 +294,8 @@ MonoBehaviour:
         guid: 65357da7b4df78468bfbae2a0b5c4038
       Path: Events\Default Work Unit\Moving\Play_FootstepConcrete
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.451885
+      minDuration: 0.229685
     - name: Play_FootstepGravel
       guid: 94174d7ad8fff348bcdc5f11b2f1fd9b
       id: 939773945
@@ -266,8 +314,8 @@ MonoBehaviour:
         guid: 94174d7ad8fff348bcdc5f11b2f1fd9b
       Path: Events\Default Work Unit\Moving\Play_FootstepGravel
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.650771
+      minDuration: 0.426128
     - name: Play_Footsteps
       guid: 2fe12b37200c994dab0e00db0e888896
       id: 3854155799
@@ -306,8 +354,48 @@ MonoBehaviour:
         guid: b09d33f9002a11478f6e3ee9e53028b9
       Path: Events\Default Work Unit\Moving\Play_FootstepsGrass
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.420912
+      minDuration: 0.268767
+    - name: Play_FootstepsSand
+      guid: 431bd3651fe3664ea08e98595712e47a
+      id: 1563642145
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Moving
+        ObjectType: 4
+        guid: cb374333898a8c4ea6691804e24c2df7
+      - ElementName: Play_FootstepsSand
+        ObjectType: 3
+        guid: 431bd3651fe3664ea08e98595712e47a
+      Path: Events\Default Work Unit\Moving\Play_FootstepsSand
+      maxAttenuation: 0
+      maxDuration: 0.842085
+      minDuration: 0.624046
+    - name: Play_FootstepsSnow
+      guid: b0d251cf3ce41f40aa48c5eb5847c62c
+      id: 2085175318
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Moving
+        ObjectType: 4
+        guid: cb374333898a8c4ea6691804e24c2df7
+      - ElementName: Play_FootstepsSnow
+        ObjectType: 3
+        guid: b0d251cf3ce41f40aa48c5eb5847c62c
+      Path: Events\Default Work Unit\Moving\Play_FootstepsSnow
+      maxAttenuation: 0
+      maxDuration: 0.599071
+      minDuration: 0.366728
     - name: Play_Forest_Biom
       guid: 84fbb33f877dd84c87efe7b52fc302b9
       id: 2129929147
@@ -403,8 +491,8 @@ MonoBehaviour:
         guid: f0433eb1d569e549b8386c7b9b3afbf7
       Path: Events\Default Work Unit\Play_Money
       maxAttenuation: 0
-      maxDuration: 0.174467
-      minDuration: 0.174467
+      maxDuration: 3.025795
+      minDuration: 3.025795
     - name: Play_MovingPlatform
       guid: e6b85ce4e05bec4d99bea2f9d627e2f1
       id: 2603220653
@@ -476,6 +564,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_Desert_Boim
+      guid: 53baa0fe6eecaa4a8583b9e8594de695
+      id: 2527776833
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
+      - ElementName: Stop_Desert_Boim
+        ObjectType: 3
+        guid: 53baa0fe6eecaa4a8583b9e8594de695
+      Path: Events\Default Work Unit\Music\Stop_Desert_Boim
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_FootstepGravel
       guid: d713a01dc78a734fa2a54be58690d98e
       id: 2726058795
@@ -516,6 +624,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_Main_Menu
+      guid: 3b8804eba8187d43b1903b882a6975c9
+      id: 774860123
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
+      - ElementName: Stop_Main_Menu
+        ObjectType: 3
+        guid: 3b8804eba8187d43b1903b882a6975c9
+      Path: Events\Default Work Unit\Music\Stop_Main_Menu
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Winter_Biom
+      guid: 96201a5ce30c6b4099e2371f8c90239d
+      id: 511056921
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
+      - ElementName: Stop_Winter_Biom
+        ObjectType: 3
+        guid: 96201a5ce30c6b4099e2371f8c90239d
+      Path: Events\Default Work Unit\Music\Stop_Winter_Biom
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -528,7 +676,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b9b62c63607cd84c9e961aa1db8e374b
     GuidInternal: 
-    m_lastTime: -8585807625915540161
+    m_lastTime: -8585807522221794753
     List:
     - name: Menu_Music
       guid: 5ac017610a64344bacc101988a71b4ad
@@ -652,7 +800,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585807625905342368
     List: []
-  ExpandedFileSystemItemIds: 020000000300000004000000050000001500000016000000170000001b0000001d0000001e0000002a000000
+  ExpandedFileSystemItemIds: 020000000300000004000000050000001500000016000000170000001b0000001d0000001e0000001f0000002a000000
   ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

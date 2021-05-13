@@ -41,7 +41,7 @@
 						<Action Name="" ID="{51DCDE23-DE86-4C45-AA5F-2937464F9074}" ShortID="667342977">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Money" ID="{26C7353F-9353-4DF6-B235-1F4A27CDF260}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
+									<ObjectRef Name="Money" ID="{4D717CB4-05C5-4FCF-9613-89D5245BCB2E}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -129,6 +129,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_FootstepsSnow" ID="{CF51D2B0-E43C-401F-AA48-C5EB5847C62C}">
+							<ChildrenList>
+								<Action Name="" ID="{01CC9108-1B92-4AF9-92C6-EDA580EF4869}" ShortID="204080494">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepsSnow" ID="{546C1C8C-AF00-4224-AFE3-BE930A9A6844}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_FootstepsSand" ID="{65D31B43-E31F-4E66-A08E-98595712E47A}">
+							<ChildrenList>
+								<Action Name="" ID="{7BAA39F5-CF41-4475-ABD8-8FC187F10932}" ShortID="743842099">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepsSand" ID="{937CF5BA-DC21-4C62-8AC9-65013382C5B9}" WorkUnitID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Music" ID="{D84F88E0-B666-48F2-8060-C54F7378C243}" ShortID="266463985">
@@ -175,6 +197,59 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Forest Biom" ID="{13AA9FF6-360F-4953-A337-E87F80DD04BE}" WorkUnitID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Main_Menu" ID="{EB04883B-18A8-437D-B190-3B882A6975C9}">
+							<ChildrenList>
+								<Action Name="" ID="{885A0AC8-FCD7-4630-82AE-B203EBCA2755}" ShortID="409018195">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Menu" ID="{F827F2CF-D895-4872-B133-C11615A4F675}" WorkUnitID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Desert_Boim" ID="{EF14BBE6-7ED0-423F-9FED-65E25F2E9902}">
+							<ChildrenList>
+								<Action Name="" ID="{1FA83B15-7720-4345-9C59-671EBF0D1A6F}" ShortID="684900067">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Desert Boim" ID="{9B1695D8-1116-47E5-83E3-364E0CAFAE78}" WorkUnitID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Desert_Boim" ID="{FEA0BA53-EC6E-4AAA-8583-B9E8594DE695}">
+							<ChildrenList>
+								<Action Name="" ID="{B085C850-45D6-4770-A15E-D2EAAD494356}" ShortID="1012015205">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Desert Boim" ID="{9B1695D8-1116-47E5-83E3-364E0CAFAE78}" WorkUnitID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Winter_Biom" ID="{5C1A2096-0CE3-406B-99E2-371F8C90239D}">
+							<ChildrenList>
+								<Action Name="" ID="{8CB91846-3213-4550-9F9C-1087E65D4E54}" ShortID="900669932">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Winter Biom" ID="{07860C53-38A1-45BC-8A0D-9CA0EB29E71A}" WorkUnitID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

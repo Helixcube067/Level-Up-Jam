@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	1306435193	Play_Slider			\Default Work Unit\Play_Slider	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	306945458	Slider	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\690c1f826b18139 (online-audio-converter.com)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Slider		30840
+	306945458	Slider	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\690c1f826b18139 (online-audio-converter.com)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Slider		30840
 

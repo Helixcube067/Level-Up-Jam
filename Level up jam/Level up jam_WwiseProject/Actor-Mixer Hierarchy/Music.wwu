@@ -6,6 +6,11 @@
 				<Sound Name="Winter Biom" ID="{07860C53-38A1-45BC-8A0D-9CA0EB29E71A}" ShortID="513906676">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -64,37 +69,9 @@
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{4380FD85-35D6-453E-86A4-F1231DF4004C}" ShortID="108220428">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Menu_Music" ID="{6117C05A-640A-4B34-ACC1-01988A71B4AD}" WorkUnitID="{632CB6B9-7C60-4CD8-9E96-1AA1DB8E374B}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{922F3A82-4B1B-45FF-8F4A-166BA4A2428B}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-200</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>50.44092</XPos>
-												<YPos>-0.34533</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>-8.15639</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
+							<ValueList>
+								<Value>-13</Value>
+							</ValueList>
 						</Property>
 					</PropertyList>
 					<ReferenceList>
@@ -117,6 +94,37 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="PuzzleGame2 (online-audio-converter_com)" ID="{DE6ADF32-232D-439B-B195-5B3A62427D07}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Desert Boim" ID="{9B1695D8-1116-47E5-83E3-364E0CAFAE78}" ShortID="740743039">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Desert" ID="{5641D7FB-D031-4A49-A14A-29D573D6CCB5}">
+							<Language>SFX</Language>
+							<AudioFile>Desert.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="218209204"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Desert" ID="{5641D7FB-D031-4A49-A14A-29D573D6CCB5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

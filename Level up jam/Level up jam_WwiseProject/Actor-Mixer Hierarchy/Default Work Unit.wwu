@@ -526,12 +526,368 @@
 							</ChildrenList>
 							<ObjectLists/>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="FootstepsSnow" ID="{546C1C8C-AF00-4224-AFE3-BE930A9A6844}" ShortID="920214495">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{68FF60CD-5322-4379-8DCC-E8AE47ADC6B7}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FootstepsSnow" ID="{DDC409A1-67E8-45A1-A1AE-A65A9CB3169E}" ShortID="595673612">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="wova-zvuki-shagi-hod-ba-po-snegu-3" ID="{50E67F08-9C59-4DB1-BC69-857D0ECC78B6}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.062535353100994"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.121427870099018"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.167570460736644"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.686876603752004"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>wova-zvuki-shagi-hod-ba-po-snegu-3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="450292810"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="wova-zvuki-shagi-hod-ba-po-snegu-3" ID="{50E67F08-9C59-4DB1-BC69-857D0ECC78B6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsSnow_01" ID="{63F40B90-BE37-41D7-BE25-2585D9C80070}" ShortID="473409019">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="wova-zvuki-shagi-hod-ba-po-snegu-3" ID="{E357E9ED-CFD0-4418-9FDC-FFA97513841A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0416466277706221"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.229056452738421"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.799468834983402"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.21110670177023"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>wova-zvuki-shagi-hod-ba-po-snegu-3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="261542282"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="wova-zvuki-shagi-hod-ba-po-snegu-3" ID="{E357E9ED-CFD0-4418-9FDC-FFA97513841A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsSnow_02" ID="{FB38E226-78F3-4A39-A92D-479B79BD6E1F}" ShortID="411177788">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="wova-zvuki-shagi-hod-ba-po-snegu-3" ID="{1100DE3C-9884-4DE2-B5C9-81809214C286}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0559626560667734"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.242071023916741"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.44922777796374"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.97366095856086"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>wova-zvuki-shagi-hod-ba-po-snegu-3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="47580561"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="wova-zvuki-shagi-hod-ba-po-snegu-3" ID="{1100DE3C-9884-4DE2-B5C9-81809214C286}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsSnow_03" ID="{34200DE8-19AD-4155-A1D7-88F4AAEEB559}" ShortID="437968709">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="wova-zvuki-shagi-hod-ba-po-snegu-3" ID="{2B8296B9-9E3E-49EF-AF2F-315DE2361F5B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.135114675059076"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.20093977316478"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.05122589797939"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.58493719002911"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>wova-zvuki-shagi-hod-ba-po-snegu-3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="426659800"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="wova-zvuki-shagi-hod-ba-po-snegu-3" ID="{2B8296B9-9E3E-49EF-AF2F-315DE2361F5B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsSnow_04" ID="{089AC2D0-AD70-40CC-8914-45673EA6C966}" ShortID="580544036">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="wova-zvuki-shagi-hod-ba-po-snegu-3" ID="{1C2592AB-F634-4964-8881-EEAE5CBAE0B9}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0546611989489421"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.236865195445413"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.84389526847001"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.33337328784858"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>wova-zvuki-shagi-hod-ba-po-snegu-3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="572400829"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="wova-zvuki-shagi-hod-ba-po-snegu-3" ID="{1C2592AB-F634-4964-8881-EEAE5CBAE0B9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="FootstepsSand" ID="{937CF5BA-DC21-4C62-8AC9-65013382C5B9}" ShortID="951016350">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="FootstepsSand_01" ID="{6CF53AA6-3112-45BE-8064-E6F1A4CE6D44}" ShortID="883288405">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="feet_footsteps_sand_dry_barefoot_walk_measured" ID="{C3159862-A273-4D0F-B5B8-FFB8662B6BC3}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0966280133352657"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.361083628779149"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.0216955998099"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.76336620322272"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>feet_footsteps_sand_dry_barefoot_walk_measured.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="162511037"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="feet_footsteps_sand_dry_barefoot_walk_measured" ID="{C3159862-A273-4D0F-B5B8-FFB8662B6BC3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsSand_02" ID="{D6D8917A-B65C-4912-886C-42E7A8F11C88}" ShortID="253963041">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="feet_footsteps_sand_dry_barefoot_walk_measured" ID="{B7456B8E-D2CC-433F-A581-DE49C4F443CC}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.139856335090515"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.369220724638961"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.96803562949138"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.67069851284362"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>feet_footsteps_sand_dry_barefoot_walk_measured.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="753439940"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="feet_footsteps_sand_dry_barefoot_walk_measured" ID="{B7456B8E-D2CC-433F-A581-DE49C4F443CC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsSand_03" ID="{F2FCF8B3-A9F3-4583-850C-C5D8A773F4FA}" ShortID="943623821">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="feet_footsteps_sand_dry_barefoot_walk_measured" ID="{FDD5E406-8E05-4096-9E01-83C460FBFC95}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.111154919196938"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.569668960884304"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.8732622316043"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.51175842352661"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>feet_footsteps_sand_dry_barefoot_walk_measured.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="68530990"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="feet_footsteps_sand_dry_barefoot_walk_measured" ID="{FDD5E406-8E05-4096-9E01-83C460FBFC95}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsSand_04" ID="{D27773B1-763C-4D16-A098-35FF46DCBD2D}" ShortID="683592295">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="feet_footsteps_sand_dry_barefoot_walk_measured" ID="{6AF568D8-ABB4-4751-A1E6-36755686C543}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0789452551114618"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.547880070473543"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="8.50497650469074"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.1290220358607"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>feet_footsteps_sand_dry_barefoot_walk_measured.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="753189609"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="feet_footsteps_sand_dry_barefoot_walk_measured" ID="{6AF568D8-ABB4-4751-A1E6-36755686C543}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="FootstepsSand_05" ID="{24812E0C-3093-4777-A7FA-76DEFE628A66}" ShortID="105110566">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="feet_footsteps_sand_dry_barefoot_walk_measured" ID="{428CDE56-E1CB-4B7E-9D1B-40EDA9568984}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.238414670436612"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.637877661300607"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="20.5367085686881"/>
+												<Property Name="TrimEnd" Type="Real64" Value="21.378793536342"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>feet_footsteps_sand_dry_barefoot_walk_measured.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="661054664"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists/>
+									<ActiveSourceList>
+										<ActiveSource Name="feet_footsteps_sand_dry_barefoot_walk_measured" ID="{428CDE56-E1CB-4B7E-9D1B-40EDA9568984}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<ObjectLists/>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<ObjectLists/>
 					<GroupingInfo>
 						<GroupingBehaviorList>
 							<GroupingBehavior>
+								<ItemRef Name="FootstepsSnow" ID="{546C1C8C-AF00-4224-AFE3-BE930A9A6844}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
 								<ItemRef Name="FootstepConcrete" ID="{EB52B9B9-CCF3-48F1-BB73-AF4FB0C69CCA}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="FootstepsSand" ID="{937CF5BA-DC21-4C62-8AC9-65013382C5B9}"/>
 							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="FootstepGravel" ID="{43D139C0-7791-4545-9C72-FC1E3F839B73}"/>
@@ -564,43 +920,6 @@
 				</SwitchContainer>
 				<WorkUnit Name="Music" ID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}" PersistMode="Reference"/>
 				<WorkUnit Name="SFX" ID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}" PersistMode="Reference"/>
-				<Sound Name="FootstepsGrass" ID="{B8B8D765-E0A3-4E63-84B9-C2FC0313C486}" ShortID="60189905">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>9</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="4850d7b71b51f16 (online-audio-converter_com)" ID="{A2CFAD06-F894-4427-9035-CB749BB8E7D8}">
-							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="0.00749958860048672"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.0126002008788134"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.925333162266381"/>
-								<Property Name="TrimEnd" Type="Real64" Value="0.949470981078637"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>4850d7b71b51f16 (online-audio-converter.com).wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1020966742"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="4850d7b71b51f16 (online-audio-converter_com)" ID="{A2CFAD06-F894-4427-9035-CB749BB8E7D8}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

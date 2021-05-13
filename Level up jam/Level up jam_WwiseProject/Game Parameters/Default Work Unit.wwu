@@ -3,7 +3,7 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{632CB6B9-7C60-4CD8-9E96-1AA1DB8E374B}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="Menu_Music" ID="{6117C05A-640A-4B34-ACC1-01988A71B4AD}"/>
+				<GameParameter Name="MainVolume" ID="{6117C05A-640A-4B34-ACC1-01988A71B4AD}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

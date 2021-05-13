@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	511056921	Stop_Winter_Biom			\Default Work Unit\Music\Stop_Winter_Biom	
+	1334173279	Play_Winter_Biom			\Default Work Unit\Music\Play_Winter_Biom	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	317452959	Winter Biom	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Antarktica (online-audio-converter.com)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Winter Biom		7036824
+

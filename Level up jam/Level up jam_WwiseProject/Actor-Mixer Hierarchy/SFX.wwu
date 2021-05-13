@@ -3,29 +3,6 @@
 	<AudioObjects>
 		<WorkUnit Name="SFX" ID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}" OwnerID="{0BE1ADAF-92CA-4EF3-8EEF-B16DCDBA7C4C}" PersistMode="Nested">
 			<ChildrenList>
-				<Sound Name="Money" ID="{26C7353F-9353-4DF6-B235-1F4A27CDF260}" ShortID="538814025">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="690c1f826b18139 (online-audio-converter_com)" ID="{03011D13-1453-427E-923B-51FEBE36F198}">
-							<Language>SFX</Language>
-							<AudioFile>690c1f826b18139 (online-audio-converter.com).wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="306945458"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ObjectLists/>
-					<ActiveSourceList>
-						<ActiveSource Name="690c1f826b18139 (online-audio-converter_com)" ID="{03011D13-1453-427E-923B-51FEBE36F198}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="MovingPlatform" ID="{5D6F1A62-D14B-4094-A6F0-D7F212B9A1B4}" ShortID="752276175">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -118,6 +95,13 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Slider" ID="{2CAD9BCF-0D35-4305-9AA8-FDFC034F42B3}" ShortID="297010878">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
@@ -267,6 +251,42 @@
 					<ObjectLists/>
 					<ActiveSourceList>
 						<ActiveSource Name="411c45ceaa06c92 (online-audio-converter_com)" ID="{E58A1C71-45A4-43DB-9D15-46C46C9B207D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Money" ID="{4D717CB4-05C5-4FCF-9613-89D5245BCB2E}" ShortID="167736215">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-18</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="open-magic-reveal-002379-" ID="{39C24F8C-5779-4853-9372-3952A563E393}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.465506985128437"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="3.02579540333484"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.02579540333484"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>open-magic-reveal-002379-.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="414639541"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="open-magic-reveal-002379-" ID="{39C24F8C-5779-4853-9372-3952A563E393}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

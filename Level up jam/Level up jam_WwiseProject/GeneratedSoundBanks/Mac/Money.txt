@@ -2,5 +2,5 @@ Event	ID	Name			Wwise Object Path	Notes
 	80633010	Play_Money			\Default Work Unit\Play_Money	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	306945458	Money	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\690c1f826b18139 (online-audio-converter.com)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Money		30840
+	414639541	Money	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\open-magic-reveal-002379-_706251C5.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Money		533816
 

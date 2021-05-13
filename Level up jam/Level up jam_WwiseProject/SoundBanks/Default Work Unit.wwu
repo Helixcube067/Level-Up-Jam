@@ -5,13 +5,19 @@
 			<ChildrenList>
 				<SoundBank Name="Footsteps" ID="{065BE9EA-F632-4BD7-9429-532C9E200807}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_FootstepsSnow" ID="{CF51D2B0-E43C-401F-AA48-C5EB5847C62C}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FootstepConcrete" ID="{A77D3565-DFB4-4678-8BFB-AE2A0B5C4038}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FootstepsGrass" ID="{F9339DB0-2A00-4711-8F6E-3EE9E53028B9}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FootstepGravel" ID="{7A4D1794-FFD8-48F3-BCDC-5F11B2F1FD9B}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Footsteps" ID="{372BE12F-0C20-4D99-AB0E-00DB0E888896}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_FootstepsSand" ID="{65D31B43-E31F-4E66-A08E-98595712E47A}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
 				<SoundBank Name="Music" ID="{133F903D-435B-40A3-AF94-9123B6E83D09}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Main_Menu" ID="{EB04883B-18A8-437D-B190-3B882A6975C9}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Main_Menu" ID="{AE3F2CCB-ECDA-4EE0-82B6-5EF22DCB9918}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
@@ -57,6 +63,22 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_LongJump" ID="{0E2F95A4-1E24-435F-9471-215075FCFF0A}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Jump" ID="{0A34FF82-394E-43F2-AA69-D879251C7B79}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="DesertMusic" ID="{7B63E6D1-11C1-460C-ACDB-0603EB05DFB1}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Winter_Biom" ID="{5C1A2096-0CE3-406B-99E2-371F8C90239D}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Winter_Biom" ID="{58C3AD85-E1D8-49BE-8C46-D3D7F9F730D0}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="WinterMusic" ID="{15A0BDC0-50EE-49DA-9416-1B5CBDE8268F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Stop_Winter_Biom" ID="{5C1A2096-0CE3-406B-99E2-371F8C90239D}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Winter_Biom" ID="{58C3AD85-E1D8-49BE-8C46-D3D7F9F730D0}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
