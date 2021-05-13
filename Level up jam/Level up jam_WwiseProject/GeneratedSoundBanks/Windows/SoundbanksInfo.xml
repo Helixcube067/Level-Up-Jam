@@ -181,7 +181,7 @@
 				<Event Id="4209206889" Name="Stop_Forest_Biom" ObjectPath="\Events\Default Work Unit\Music\Stop_Forest_Biom" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3833651337" Language="SFX" Hash="3663830055">
+		<SoundBank Id="3833651337" Language="SFX" Hash="3453380967">
 			<ObjectPath>\SoundBanks\Default Work Unit\Jump</ObjectPath>
 			<ShortName>Jump</ShortName>
 			<Path>Jump.bnk</Path>
@@ -198,7 +198,7 @@
 					<IncludedMemoryFiles>
 						<File Id="504130772" Language="SFX">
 							<ShortName>ecf1fac35ccc80b (online-audio-converter.com).wav</ShortName>
-							<Path>SFX\ecf1fac35ccc80b (online-audio-converter.com)_DCB0A027.wem</Path>
+							<Path>SFX\ecf1fac35ccc80b (online-audio-converter.com)_63321B33.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -4,5 +4,5 @@ Event	ID	Name			Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	463713910	Jump2	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\411c45ceaa06c92 (online-audio-converter.com)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Jump2		114076
-	504130772	LongJump	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\ecf1fac35ccc80b (online-audio-converter.com)_DCB0A027.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\LongJump		57852
+	504130772	LongJump	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\ecf1fac35ccc80b (online-audio-converter.com)_63321B33.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\LongJump		57852
 

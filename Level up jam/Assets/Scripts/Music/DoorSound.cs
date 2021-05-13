@@ -5,7 +5,7 @@ using UnityEngine;
 public class DoorSound : MonoBehaviour
 {
     // Start is called before the first frame update
-    void OnCollisionEnter2D(Collision2D collision)
+   public void OnTriggerEnter()
     {
         AkSoundEngine.PostEvent("Play_Money", gameObject);
     }
