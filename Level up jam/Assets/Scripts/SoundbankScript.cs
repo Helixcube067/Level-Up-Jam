@@ -34,6 +34,7 @@ public class SoundbankScript : MonoBehaviour
         }
     }
 
+    // This function should also stop the current background music and transition
     public void PlayBackgroundSound(string biome)
     {
         if(biome == "MainMenu")
