@@ -25,12 +25,12 @@ public class CharacterScript : MonoBehaviour
     Rigidbody2D _RigidBody;
     //PolygonCollider2D _Collider;
     BoxCollider2D _Collider;
-    Text _BodyTemperatureText;
     float _BodyTemperature;
     float _FootstepTimer;
     bool _PlayingMovementSound;
     double _health = 100.0;
     Slider _HealthSlider;
+    Slider _TemperatureSlider;
     string _Biome;
 
     // Start is called before the first frame update
@@ -39,13 +39,12 @@ public class CharacterScript : MonoBehaviour
         _BodyTemperature = _InitialBodyTemperature;
         _RigidBody = GetComponent<Rigidbody2D>();
         _Collider = GetComponent<BoxCollider2D>();
-        _BodyTemperatureText = GameObject.Find("TemperatureValue").GetComponent<Text>();
-        _BodyTemperatureText.text = _BodyTemperature.ToString();
         _FootstepTimer = 0.0f;
         _PlayingMovementSound = false;
         Time.timeScale = 1f;
         _Soundbank = GameObject.Find("SoundBank").GetComponent<SoundbankScript>();
         _HealthSlider = GameObject.Find("HealthbarSlider").GetComponent<Slider>();
+        _TemperatureSlider = GameObject.Find("TemperatureSlider").GetComponent<Slider>();
         _Biome = _InitialBiome;
     }
 
@@ -119,33 +118,49 @@ public class CharacterScript : MonoBehaviour
     {
         if (_Biome == "Desert")
         {
-            _BodyTemperature += 1 * Time.deltaTime;
+            _BodyTemperature += 0.5f * Time.deltaTime;
         }
         else if (_Biome == "Winter")
         {
-            _BodyTemperature -= 1 * Time.deltaTime;
+            _BodyTemperature -= 0.5f * Time.deltaTime;
         }
         else if (_Biome == "Forest")
         {
             if(_BodyTemperature < 35.99)
             {
-                _BodyTemperature += 1 * Time.deltaTime;
+                _BodyTemperature += 0.5f * Time.deltaTime;
             }
             else if(_BodyTemperature > 36.01)
             {
-                _BodyTemperature -= 1 * Time.deltaTime;
+                _BodyTemperature -= 0.5f * Time.deltaTime;
             }
         }
         _BodyTemperature = Mathf.Clamp(_BodyTemperature, 25, 47); // Make the value max out on the sides of the temperature bar
-/*      if (Input.GetButtonDown("TemperatureUp")) // default key set to W
+        /*      if (Input.GetButtonDown("TemperatureUp")) // default key set to W
+                {
+                    _BodyTemperature += 1;
+                }
+                if (Input.GetButtonDown("TemperatureDown")) // default key set to S
+                {
+                    _BodyTemperature -= 1;
+                }*/
+        _TemperatureSlider.value = (int)_BodyTemperature;
+
+        // Set the color of the character depending on the temperature (hot=red, cold=blue)
+        float TempDiff = Mathf.Abs(36 - _BodyTemperature);
+        float ColorDiff = TempDiff * 0.05f;
+        if(_BodyTemperature < 35)
         {
-            _BodyTemperature += 1;
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1-ColorDiff, 1-ColorDiff, 1);
         }
-        if (Input.GetButtonDown("TemperatureDown")) // default key set to S
+        else if(_BodyTemperature > 37)
         {
-            _BodyTemperature -= 1;
-        }*/
-        _BodyTemperatureText.text = _BodyTemperature.ToString();
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1 - ColorDiff, 1 - ColorDiff);
+        }
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
+        }
     }
 
     void HandleHealth()
