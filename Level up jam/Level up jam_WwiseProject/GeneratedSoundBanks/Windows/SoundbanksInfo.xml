@@ -326,11 +326,27 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2622319290">
+		<SoundBank Id="3991942870" Language="SFX" Hash="2982318527">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
+				<Event Id="3351022179" Name="Play_Desert_Boim" ObjectPath="\Events\Default Work Unit\Music\Play_Desert_Boim" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="218209204" Language="SFX">
+							<ShortName>Desert.wav</ShortName>
+							<Path>SFX\Desert_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2129929147" Name="Play_Forest_Biom" ObjectPath="\Events\Default Work Unit\Music\Play_Forest_Biom" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="508301514" Language="SFX">
+							<ShortName>Forest (online-audio-converter.com).wav</ShortName>
+							<Path>SFX\Forest (online-audio-converter.com)_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3306210749" Name="Play_Main_Menu" ObjectPath="\Events\Default Work Unit\Music\Play_Main_Menu" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="531307607" Language="SFX">
@@ -339,7 +355,18 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1334173279" Name="Play_Winter_Biom" ObjectPath="\Events\Default Work Unit\Music\Play_Winter_Biom" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="317452959" Language="SFX">
+							<ShortName>Antarktica (online-audio-converter.com).wav</ShortName>
+							<Path>SFX\Antarktica (online-audio-converter.com)_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2527776833" Name="Stop_Desert_Boim" ObjectPath="\Events\Default Work Unit\Music\Stop_Desert_Boim" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4209206889" Name="Stop_Forest_Biom" ObjectPath="\Events\Default Work Unit\Music\Stop_Forest_Biom" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="774860123" Name="Stop_Main_Menu" ObjectPath="\Events\Default Work Unit\Music\Stop_Main_Menu" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="511056921" Name="Stop_Winter_Biom" ObjectPath="\Events\Default Work Unit\Music\Stop_Winter_Biom" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="4035573696" Language="SFX" Hash="203382457">

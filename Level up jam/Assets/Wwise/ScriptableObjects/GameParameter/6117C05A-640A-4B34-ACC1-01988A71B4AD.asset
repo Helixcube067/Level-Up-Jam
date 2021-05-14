@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b147fa58ec0874eb376f9007a8ae14, type: 3}
   m_Name: 6117C05A-640A-4B34-ACC1-01988A71B4AD
   m_EditorClassIdentifier: 
-  objectName: Menu_Music
-  id: 4055567060
+  objectName: MainVolume
+  id: 1843561328
   guid: 6117C05A-640A-4B34-ACC1-01988A71B4AD

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: cf463501f43f34429d6937ec368ec570
     GuidInternal: 
-    m_lastTime: -8585806681130475023
+    m_lastTime: -8585806667238582646
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e105d2d10c5944baa40445b8fba662e
     GuidInternal: 
-    m_lastTime: -8585806668755660809
+    m_lastTime: -8585806066418140142
     List:
     - name: Button
       guid: 7a0cc16b83b5194b8adfde2dd1841afb
@@ -582,8 +582,8 @@ MonoBehaviour:
         guid: 53baa0fe6eecaa4a8583b9e8594de695
       Path: Events\Default Work Unit\Music\Stop_Desert_Boim
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_FootstepGravel
       guid: d713a01dc78a734fa2a54be58690d98e
       id: 2726058795
@@ -676,11 +676,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: b9b62c63607cd84c9e961aa1db8e374b
     GuidInternal: 
-    m_lastTime: -8585807522221794753
+    m_lastTime: -8585806667238841877
     List:
-    - name: Menu_Music
+    - name: MainVolume
       guid: 5ac017610a64344bacc101988a71b4ad
-      id: 4055567060
+      id: 1843561328
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -688,10 +688,10 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: b9b62c63607cd84c9e961aa1db8e374b
-      - ElementName: Menu_Music
+      - ElementName: MainVolume
         ObjectType: 13
         guid: 5ac017610a64344bacc101988a71b4ad
-      Path: Game Parameters\Default Work Unit\Menu_Music
+      Path: Game Parameters\Default Work Unit\MainVolume
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -800,8 +800,8 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585807625905342368
     List: []
-  ExpandedFileSystemItemIds: 020000000300000004000000050000001500000016000000170000001b0000001d0000001e0000001f0000002a000000
-  ExpandedWaapiItemIds: 
+  ExpandedFileSystemItemIds: 02000000030000000400000005000000060000001500000016000000170000001b0000001d0000001e0000001f0000002a000000
+  ExpandedWaapiItemIds: 060000000700000010000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 1

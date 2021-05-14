@@ -1,7 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
+	511056921	Stop_Winter_Biom			\Default Work Unit\Music\Stop_Winter_Biom	
 	774860123	Stop_Main_Menu			\Default Work Unit\Music\Stop_Main_Menu	
+	1334173279	Play_Winter_Biom			\Default Work Unit\Music\Play_Winter_Biom	
+	2129929147	Play_Forest_Biom			\Default Work Unit\Music\Play_Forest_Biom	
+	2527776833	Stop_Desert_Boim			\Default Work Unit\Music\Stop_Desert_Boim	
 	3306210749	Play_Main_Menu			\Default Work Unit\Music\Play_Main_Menu	
+	3351022179	Play_Desert_Boim			\Default Work Unit\Music\Play_Desert_Boim	
+	4209206889	Stop_Forest_Biom			\Default Work Unit\Music\Stop_Forest_Biom	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	218209204	Desert Boim	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Desert_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Desert Boim		8469568
+	317452959	Winter Biom	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Antarktica (online-audio-converter.com)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Winter Biom		7036824
+	508301514	Forest Biom	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\Forest (online-audio-converter.com)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Forest Biom		7059520
 	531307607	Main Menu	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\PuzzleGame2 (online-audio-converter.com)_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Main Menu		17008192
 
