@@ -145,6 +145,22 @@ public class CharacterScript : MonoBehaviour
                     _BodyTemperature -= 1;
                 }*/
         _TemperatureSlider.value = (int)_BodyTemperature;
+
+        // Set the color of the character depending on the temperature (hot=red, cold=blue)
+        float TempDiff = Mathf.Abs(36 - _BodyTemperature);
+        float ColorDiff = TempDiff * 0.05f;
+        if(_BodyTemperature < 35)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1-ColorDiff, 1-ColorDiff, 1);
+        }
+        else if(_BodyTemperature > 37)
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1 - ColorDiff, 1 - ColorDiff);
+        }
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1);
+        }
     }
 
     void HandleHealth()
