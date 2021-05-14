@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class SoundbankScript : MonoBehaviour
 {
-    public AK.Wwise.RTPC _Volume;
-
     // Start is called before the first frame update
     void Start()
     {
-        _Volume.SetGlobalValue(1f);
     }
 
     // Update is called once per frame
@@ -17,16 +14,30 @@ public class SoundbankScript : MonoBehaviour
     {
     }
 
+    // Volume control
+    public void SetVolume(float volume)
+    {
+        AkSoundEngine.SetRTPCValue("MainVolume", volume);
+    }
+
+    public float GetVolume()
+    {
+        float volume;
+        int type = 1;
+        AkSoundEngine.GetRTPCValue("MainVolume", 0, 0, out volume, ref type);
+        return volume;
+    }
+
     // Conditional sounds
     public void PlaySoundFootsteps(string biome)
     {
         if (biome == "Winter")
         {
-            PlaySoundFootstepConcrete();
+            PlaySoundFootstepSnow();
         }
         else if(biome == "Desert")
         {
-            PlaySoundFootstepGravel();
+            PlaySoundFootstepSand();
         }
         else if(biome == "Forest")
         {
@@ -37,35 +48,33 @@ public class SoundbankScript : MonoBehaviour
     // This function should also stop the current background music and transition
     public void PlayBackgroundSound(string biome)
     {
-        if(biome == "MainMenu")
+        Debug.Log("stopping all background sounds");
+        Debug.Log("starting a new background sound");
+        StopBackgroundSound();
+        if (biome == "MainMenu")
         {
-            StopDesertBiome();
-            StopForestBiome();
-            StopWinterBiome();
             PlayMainMenu();
         }
         else if(biome == "Winter")
         {
-            StopDesertBiome();
-            StopForestBiome();
-            StopMainMenu();
             PlayWinterBiome();
         }
         else if(biome == "Desert")
         {
-            StopWinterBiome();
-            StopForestBiome();
-            StopMainMenu();
             PlayDesertBiome();
         }
         else if(biome == "Forest")
         {
-            StopWinterBiome();
-            StopMainMenu();
-            StopDesertBiome();
             PlayForestBiome();
-
         }
+    }
+
+    public void StopBackgroundSound()
+    {
+        StopWinterBiome();
+        StopMainMenu();
+        StopDesertBiome();
+        StopForestBiome();
     }
 
     // One time play sounds
@@ -99,20 +108,19 @@ public class SoundbankScript : MonoBehaviour
         AkSoundEngine.PostEvent("Play_MovingPlatform", gameObject);
     }
 
-    public void PlaySoundFootstepConcrete()
+    public void PlaySoundFootstepSand()
     {
-        AkSoundEngine.PostEvent("Play_FootstepConcrete", gameObject);
+        AkSoundEngine.PostEvent("Play_FootstepsSand", gameObject);
     }
 
     public void PlaySoundFootstepGrass()
     {
-        //AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
         AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
     }
 
-    public void PlaySoundFootstepGravel()
+    public void PlaySoundFootstepSnow()
     {
-        AkSoundEngine.PostEvent("Play_FootstepGravel", gameObject);
+        AkSoundEngine.PostEvent("Play_FootstepsSnow", gameObject);
     }
 
     // Background music sounds
@@ -123,6 +131,7 @@ public class SoundbankScript : MonoBehaviour
 
     public void PlayForestBiome()
     {
+        Debug.Log("play forest biome");
         AkSoundEngine.PostEvent("Play_Forest_Biom", gameObject);
     }
 
@@ -133,24 +142,28 @@ public class SoundbankScript : MonoBehaviour
 
     public void PlayDesertBiome()
     {
-        AkSoundEngine.PostEvent("Play_Desert_Biom", gameObject);
+        AkSoundEngine.PostEvent("Play_Desert_Boim", gameObject);
     }
     public void StopMainMenu()
     {
+        Debug.Log("Stop Main Menu");
         AkSoundEngine.PostEvent("Stop_Main_Menu", gameObject);
     }
     public void StopForestBiome()
     {
+        Debug.Log("Stop forest");
         AkSoundEngine.PostEvent("Stop_Forest_Biom", gameObject);
     }
 
     public void StopWinterBiome()
     {
+        Debug.Log("Stop winter");
         AkSoundEngine.PostEvent("Stop_Winter_Biom", gameObject);
     }
 
     public void StopDesertBiome()
     {
-        AkSoundEngine.PostEvent("Stop_Desert_Biom", gameObject);
+        Debug.Log("Stop desert");
+        AkSoundEngine.PostEvent("Stop_Desert_Boim", gameObject);
     }
 }

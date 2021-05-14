@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 147364657}
   - component: {fileID: 147364658}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: VolumeSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -207,15 +207,27 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2060455352}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 0
+  m_MaxValue: 50
+  m_WholeNumbers: 1
+  m_Value: 20
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1433444736}
         m_TargetAssemblyTypeName: SoundbankScript, Assembly-CSharp
         m_MethodName: PlaySoundSlider
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1896281691}
+        m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
+        m_MethodName: SetVolume
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -921,30 +933,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7953945201800390455, guid: 1cf110d5a61cb2e47b2b4d7fe5d1ffba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1cf110d5a61cb2e47b2b4d7fe5d1ffba, type: 3}
---- !u!1 &871511686 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5943934919676414442, guid: 1cf110d5a61cb2e47b2b4d7fe5d1ffba, type: 3}
-  m_PrefabInstance: {fileID: 871511685}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &871511687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871511686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e21708030eb7804488617348998d9705, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 6915410637ef44c49b23b62d8a60475f, type: 2}
 --- !u!114 &871511688 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7953945201800390453, guid: 1cf110d5a61cb2e47b2b4d7fe5d1ffba, type: 3}
   m_PrefabInstance: {fileID: 871511685}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871511686}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2ca510f59fbd0e49b359a9391ccce21, type: 3}
@@ -2104,6 +2098,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1896281690}
+  - component: {fileID: 1896281691}
   m_Layer: 5
   m_Name: Settings menu
   m_TagString: Untagged
@@ -2134,6 +2129,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1896281691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1896281689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e21708030eb7804488617348998d9705, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1922168143
 GameObject:
   m_ObjectHideFlags: 0

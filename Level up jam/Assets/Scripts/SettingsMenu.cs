@@ -8,15 +8,17 @@ using TMPro;
 [System.Serializable]
 public class SettingsMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
-
+    private SoundbankScript _Soundbank;
+    Slider _VolumeSlider;
     void Start()
     {
-
+        _Soundbank = GameObject.Find("SoundBank").GetComponent<SoundbankScript>();
+        _VolumeSlider = GameObject.Find("VolumeSlider").GetComponent<Slider>();
+        _VolumeSlider.value = _Soundbank.GetVolume();
     }
-    public void SetVolume(float volume)
+
+    public void SetVolume()
     {
-        Debug.Log(volume);
-        audioMixer.SetFloat("Volume", volume);
+        _Soundbank.SetVolume(_VolumeSlider.value);
     }
 }

@@ -98,7 +98,7 @@ MonoBehaviour:
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
-  unloadTriggerList: 
+  unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!114 &1030642251016829885
@@ -122,7 +122,7 @@ MonoBehaviour:
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
-  unloadTriggerList: 
+  unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!114 &1030642251016829881
@@ -146,7 +146,7 @@ MonoBehaviour:
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
-  unloadTriggerList: 
+  unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!114 &1030642251016829880
@@ -170,7 +170,7 @@ MonoBehaviour:
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
-  unloadTriggerList: 
+  unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!114 &1030642251016829858
@@ -194,7 +194,7 @@ MonoBehaviour:
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
-  unloadTriggerList: 
+  unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!114 &1030642251016829883
@@ -218,7 +218,7 @@ MonoBehaviour:
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
-  unloadTriggerList: 
+  unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!114 &5121540947263420740
@@ -242,7 +242,7 @@ MonoBehaviour:
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
-  unloadTriggerList: 
+  unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!114 &1832243272246599616
@@ -266,7 +266,7 @@ MonoBehaviour:
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
-  unloadTriggerList: 
+  unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
 --- !u!114 &3495610060399237000
@@ -281,7 +281,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0cfa645b517c99438561ddd5c76b83c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Volume:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c63d480c49e55ee49b216c42f4f6ad74, type: 2}

@@ -11,8 +11,8 @@ public class CharacterScript : MonoBehaviour
     [SerializeField] [Range(0, 1)] float _SmoothMovement;
     [SerializeField] LayerMask _Floor;
     [SerializeField] float _InitialBodyTemperature;
+    [SerializeField] string _InitialBiome;
     [SerializeField] float _JumpHeight = 7.0f;
-    [SerializeField] Slider _HealthSlider;
     [SerializeField] GameObject _HUD;
     [SerializeField] GameObject _ReplayMenu;
     [SerializeField] GameObject _WinMenu;
@@ -29,7 +29,9 @@ public class CharacterScript : MonoBehaviour
     float _BodyTemperature;
     float _FootstepTimer;
     bool _PlayingMovementSound;
-    double _health = 100.0;    
+    double _health = 100.0;
+    Slider _HealthSlider;
+    string _Biome;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +45,8 @@ public class CharacterScript : MonoBehaviour
         _PlayingMovementSound = false;
         Time.timeScale = 1f;
         _Soundbank = GameObject.Find("SoundBank").GetComponent<SoundbankScript>();
+        _HealthSlider = GameObject.Find("HealthbarSlider").GetComponent<Slider>();
+        _Biome = _InitialBiome;
     }
 
     // Update is called once per frame
@@ -50,7 +54,10 @@ public class CharacterScript : MonoBehaviour
     {
         handleMovement();
         handleTemperature();
-        if(_PlayingMovementSound)
+        HandleHealth();
+        DeathCheck();
+        // Timer to start playing movement sounds only every 0.3 seconds so they do not overlap.
+        if (_PlayingMovementSound)
         {
             _FootstepTimer += Time.deltaTime;
             if (_FootstepTimer > 0.3f)
@@ -59,16 +66,6 @@ public class CharacterScript : MonoBehaviour
                 _FootstepTimer = 0.0f;
             }
         }
-        //Temperature goes up in desert, down in snow, goes back to 36.
-        //Once below 30 you start losing health.
-        //Once above 42 you start losing health.
-        if (_BodyTemperature >= 42)
-            _health -= 1*Time.deltaTime;
-        else if (_BodyTemperature <= 30) { //made this -5 for testing health drain
-            _health -= 1*Time.deltaTime;
-        }
-        DeathCheck();
-        //_HealthSlider.value = (int)_health;
     }
    
     void handleMovement()
@@ -81,8 +78,7 @@ public class CharacterScript : MonoBehaviour
         {
             if(IsGrounded())
             {
-                //_Soundbank.PlaySoundFootstepGravel();
-                _Soundbank.PlaySoundFootstepGrass();
+                _Soundbank.PlaySoundFootsteps(_Biome);
             }
             else
             {
@@ -121,16 +117,49 @@ public class CharacterScript : MonoBehaviour
 
     void handleTemperature()
     {
-        if(Input.GetButtonDown("TemperatureUp")) // default key set to W
+        if (_Biome == "Desert")
+        {
+            _BodyTemperature += 1 * Time.deltaTime;
+        }
+        else if (_Biome == "Winter")
+        {
+            _BodyTemperature -= 1 * Time.deltaTime;
+        }
+        else if (_Biome == "Forest")
+        {
+            if(_BodyTemperature < 35.99)
+            {
+                _BodyTemperature += 1 * Time.deltaTime;
+            }
+            else if(_BodyTemperature > 36.01)
+            {
+                _BodyTemperature -= 1 * Time.deltaTime;
+            }
+        }
+        _BodyTemperature = Mathf.Clamp(_BodyTemperature, 25, 47); // Make the value max out on the sides of the temperature bar
+/*      if (Input.GetButtonDown("TemperatureUp")) // default key set to W
         {
             _BodyTemperature += 1;
-            _BodyTemperatureText.text = _BodyTemperature.ToString();
         }
-        if(Input.GetButtonDown("TemperatureDown")) // default key set to S
+        if (Input.GetButtonDown("TemperatureDown")) // default key set to S
         {
             _BodyTemperature -= 1;
-            _BodyTemperatureText.text = _BodyTemperature.ToString();
+        }*/
+        _BodyTemperatureText.text = _BodyTemperature.ToString();
+    }
+
+    void HandleHealth()
+    {
+        //Temperature goes up in desert, down in snow, goes back to 36.
+        //Once below 30 you start losing health.
+        //Once above 42 you start losing health.
+        if (_BodyTemperature >= 42)
+            _health -= 3 * Time.deltaTime;
+        else if (_BodyTemperature <= 30)
+        { //made this -5 for testing health drain
+            _health -= 3 * Time.deltaTime;
         }
+        _HealthSlider.value = (int)_health;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -145,7 +174,7 @@ public class CharacterScript : MonoBehaviour
    
     void DeathCheck() 
     {
-        if (gameObject.transform.position.y <= -5 || _health == 0) 
+        if (gameObject.transform.position.y <= -5 || _health <= 0) 
         {
             Debug.Log("Pos: " + gameObject.transform.position.y);
             Debug.Log("Health: " + _health);
@@ -158,6 +187,17 @@ public class CharacterScript : MonoBehaviour
     public float GetBodyTemp()
     {
         return _BodyTemperature;
+    }
+    
+    public string GetBiome()
+    {
+        return _Biome;
+    }
+
+    public void SetBiome(string new_biome)
+    {
+        Debug.Log("Biome set to: " + new_biome);
+        _Biome = new_biome;
     }
 
     public bool IsGrounded()
