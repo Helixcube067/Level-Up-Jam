@@ -179,6 +179,14 @@ public class CharacterScript : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "DamageObject")
+        {
+            ContactPoint2D contact = collision.contacts[0];
+            _Animator.SetTrigger("Damage"); // Play take damage animation
+            _RigidBody.AddForce(new Vector2(0, 2), ForceMode2D.Impulse); // Knock the player up a little bit when taking damage
+            _health -= 10;
+        }
+
         if (collision.gameObject.tag == "Finish")
         {
             _HUD.gameObject.SetActive(false);
@@ -191,8 +199,8 @@ public class CharacterScript : MonoBehaviour
     {
         if (gameObject.transform.position.y <= -5 || _health <= 0) 
         {
-            Debug.Log("Pos: " + gameObject.transform.position.y);
-            Debug.Log("Health: " + _health);
+            /*Debug.Log("Pos: " + gameObject.transform.position.y);
+            Debug.Log("Health: " + _health);*/
             _HUD.gameObject.SetActive(false);
             _ReplayMenu.SetActive(true);
             Time.timeScale = 0f;
