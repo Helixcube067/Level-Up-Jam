@@ -48,16 +48,23 @@ public class SoundbankScript : MonoBehaviour
         {
             StopDesertBiome();
             StopForestBiome();
-            //TODO: StopMainMenu();
+            StopMainMenu();
             PlayWinterBiome();
         }
         else if(biome == "Desert")
         {
-            //TODO
+            StopWinterBiome();
+            StopForestBiome();
+            StopMainMenu();
+            PlayDesertBiome();
         }
         else if(biome == "Forest")
         {
-            //TODO:
+            StopWinterBiome();
+            StopMainMenu();
+            StopDesertBiome();
+            PlayForestBiome();
+
         }
     }
 
@@ -99,8 +106,8 @@ public class SoundbankScript : MonoBehaviour
 
     public void PlaySoundFootstepGrass()
     {
-        AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
-       // AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
+        //AkSoundEngine.PostEvent("Play_Footsteps", gameObject);
+        AkSoundEngine.PostEvent("Play_FootstepsGrass", gameObject);
     }
 
     public void PlaySoundFootstepGravel()
@@ -128,7 +135,10 @@ public class SoundbankScript : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Play_Desert_Biom", gameObject);
     }
-
+    public void StopMainMenu()
+    {
+        AkSoundEngine.PostEvent("Stop_Main_Menu", gameObject);
+    }
     public void StopForestBiome()
     {
         AkSoundEngine.PostEvent("Stop_Forest_Biom", gameObject);
