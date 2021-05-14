@@ -22,6 +22,7 @@ namespace AK
         static const AkUniqueID PLAY_FOOTSTEPSSNOW = 2085175318U;
         static const AkUniqueID PLAY_FOREST_BIOM = 2129929147U;
         static const AkUniqueID PLAY_JUMP = 3689126666U;
+        static const AkUniqueID PLAY_LEVELBUTTON = 2654602144U;
         static const AkUniqueID PLAY_LONGJUMP = 457516612U;
         static const AkUniqueID PLAY_MAIN_MENU = 3306210749U;
         static const AkUniqueID PLAY_MONEY = 80633010U;

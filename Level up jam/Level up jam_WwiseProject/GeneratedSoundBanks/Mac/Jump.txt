@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	457516612	Play_LongJump			\Default Work Unit\Moving\Play_LongJump	
+	2654602144	Play_LevelButton			\Default Work Unit\SFX\Play_LevelButton	
 	3689126666	Play_Jump			\Default Work Unit\Moving\Play_Jump	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	315116268	LevelButton	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\joystick-trigger-button-press_gyyt5ied_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\LevelButton		87616
 	463713910	Jump2	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\411c45ceaa06c92 (online-audio-converter.com)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Jump2		114076
 	504130772	LongJump	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Mac\SFX\ecf1fac35ccc80b (online-audio-converter.com)_DCB0A027.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\LongJump		57852
 

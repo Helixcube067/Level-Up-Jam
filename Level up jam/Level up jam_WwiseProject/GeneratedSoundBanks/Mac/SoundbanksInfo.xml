@@ -16,7 +16,7 @@
 			<ShortName>Slider</ShortName>
 			<Path>Slider.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1306435193" Name="Play_Slider" ObjectPath="\Events\Default Work Unit\Play_Slider" DurationType="OneShot" DurationMin="0.174467" DurationMax="0.174467">
+				<Event Id="1306435193" Name="Play_Slider" ObjectPath="\Events\Default Work Unit\SFX\Play_Slider" DurationType="OneShot" DurationMin="0.174467" DurationMax="0.174467">
 					<IncludedMemoryFiles>
 						<File Id="306945458" Language="SFX">
 							<ShortName>690c1f826b18139 (online-audio-converter.com).wav</ShortName>
@@ -31,7 +31,7 @@
 			<ShortName>Money</ShortName>
 			<Path>Money.bnk</Path>
 			<IncludedEvents>
-				<Event Id="80633010" Name="Play_Money" ObjectPath="\Events\Default Work Unit\Play_Money" DurationType="OneShot" DurationMin="3.025795" DurationMax="3.025795">
+				<Event Id="80633010" Name="Play_Money" ObjectPath="\Events\Default Work Unit\SFX\Play_Money" DurationType="OneShot" DurationMin="3.025795" DurationMax="3.025795">
 					<IncludedMemoryFiles>
 						<File Id="414639541" Language="SFX">
 							<ShortName>open-magic-reveal-002379-.wav</ShortName>
@@ -46,7 +46,7 @@
 			<ShortName>Button</ShortName>
 			<Path>Button.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2631470667" Name="Play_SoundButton" ObjectPath="\Events\Default Work Unit\Play_SoundButton" DurationType="OneShot" DurationMin="0.319478" DurationMax="0.319478"/>
+				<Event Id="2631470667" Name="Play_SoundButton" ObjectPath="\Events\Default Work Unit\SFX\Play_SoundButton" DurationType="OneShot" DurationMin="0.319478" DurationMax="0.319478"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="839973370" Language="SFX">
@@ -303,7 +303,7 @@
 				<Event Id="511056921" Name="Stop_Winter_Biom" ObjectPath="\Events\Default Work Unit\Music\Stop_Winter_Biom" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3833651337" Language="SFX" Hash="3663830055">
+		<SoundBank Id="3833651337" Language="SFX" Hash="614954495">
 			<ObjectPath>\SoundBanks\Default Work Unit\Jump</ObjectPath>
 			<ShortName>Jump</ShortName>
 			<Path>Jump.bnk</Path>
@@ -313,6 +313,14 @@
 						<File Id="463713910" Language="SFX">
 							<ShortName>411c45ceaa06c92 (online-audio-converter.com).wav</ShortName>
 							<Path>SFX\411c45ceaa06c92 (online-audio-converter.com)_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2654602144" Name="Play_LevelButton" ObjectPath="\Events\Default Work Unit\SFX\Play_LevelButton" DurationType="OneShot" DurationMin="0.496327" DurationMax="0.496327">
+					<IncludedMemoryFiles>
+						<File Id="315116268" Language="SFX">
+							<ShortName>joystick-trigger-button-press_gyyt5ied.wav</ShortName>
+							<Path>SFX\joystick-trigger-button-press_gyyt5ied_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -374,7 +382,7 @@
 			<ShortName>Platform</ShortName>
 			<Path>Platform.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2603220653" Name="Play_MovingPlatform" ObjectPath="\Events\Default Work Unit\Play_MovingPlatform" MaxAttenuation="15.000000" DurationType="Infinite">
+				<Event Id="2603220653" Name="Play_MovingPlatform" ObjectPath="\Events\Default Work Unit\SFX\Play_MovingPlatform" MaxAttenuation="15.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="220054121" Language="SFX">
 							<ShortName>404050__deathscyp__moving-platform.wav</ShortName>
