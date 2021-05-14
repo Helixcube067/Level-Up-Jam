@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TemperatureDoors : MonoBehaviour
+public class TemperatureDoorScript : MonoBehaviour
 {
     [SerializeField] Animator _Animator;
     [SerializeField] BoxCollider2D _Collider;
@@ -28,12 +28,18 @@ public class TemperatureDoors : MonoBehaviour
             }
             else
             {
-                _Soundbank.PlaySoundDoor();
-                _Animator.speed = 1;
-                Invoke("DisableCollider", 0.5f);
+                OpenDoor();
             }
         }
     }
+
+    public void OpenDoor()
+    {
+        _Soundbank.PlaySoundDoor();
+        _Animator.speed = 1;
+        Invoke("DisableCollider", 0.5f);
+    }
+
     void DisableCollider()
     {
         _Collider.enabled = false;

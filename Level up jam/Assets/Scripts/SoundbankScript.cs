@@ -83,6 +83,11 @@ public class SoundbankScript : MonoBehaviour
         AkSoundEngine.PostEvent("Play_SoundButton", gameObject);
     }
 
+    public void PlaySoundLevelButton()
+    {
+        AkSoundEngine.PostEvent("Play_LevelButton", gameObject);
+    }
+
     public void PlaySoundJump()
     {
         AkSoundEngine.PostEvent("Play_Jump", gameObject);
