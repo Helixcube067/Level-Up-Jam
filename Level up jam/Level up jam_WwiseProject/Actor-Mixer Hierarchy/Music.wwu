@@ -127,6 +127,32 @@
 						<ActiveSource Name="Desert" ID="{5641D7FB-D031-4A49-A14A-29D573D6CCB5}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="WinSong" ID="{2145853F-9BCD-4D4A-8597-E46954D6FEC5}" ShortID="450746881">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="WinSong" ID="{951C4B05-B75B-4096-90B3-DE62F602125D}">
+							<Language>SFX</Language>
+							<AudioFile>WinSong.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1045266541"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="WinSong" ID="{951C4B05-B75B-4096-90B3-DE62F602125D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

@@ -211,6 +211,31 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_WinSong" ID="{5E4E1364-3010-471A-8C26-B589ED42FA24}">
+							<ChildrenList>
+								<Action Name="" ID="{775C534E-AD0C-4ABE-B0B5-5B463B33CFD5}" ShortID="672555400">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WinSong" ID="{2145853F-9BCD-4D4A-8597-E46954D6FEC5}" WorkUnitID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_WinSong" ID="{4B0CF50D-0162-4B70-8B6D-7317E65A8C7D}">
+							<ChildrenList>
+								<Action Name="" ID="{C2AF3D32-5B44-4EF4-97B7-BF3C98B94EB6}" ShortID="645420478">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WinSong" ID="{2145853F-9BCD-4D4A-8597-E46954D6FEC5}" WorkUnitID="{6F19EB05-E2DD-4D1D-BE65-CDFAACD8CB08}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="SFX" ID="{52616229-7E55-4D71-AD39-37ABC1C0C3D0}" ShortID="382180024">

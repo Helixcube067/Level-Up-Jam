@@ -29,10 +29,12 @@ namespace AK
         static const AkUniqueID PLAY_MOVINGPLATFORM = 2603220653U;
         static const AkUniqueID PLAY_SLIDER = 1306435193U;
         static const AkUniqueID PLAY_SOUNDBUTTON = 2631470667U;
+        static const AkUniqueID PLAY_WINSONG = 2481483955U;
         static const AkUniqueID PLAY_WINTER_BIOM = 1334173279U;
         static const AkUniqueID STOP_DESERT_BOIM = 2527776833U;
         static const AkUniqueID STOP_FOREST_BIOM = 4209206889U;
         static const AkUniqueID STOP_MAIN_MENU = 774860123U;
+        static const AkUniqueID STOP_WINSONG = 2522867309U;
         static const AkUniqueID STOP_WINTER_BIOM = 511056921U;
     } // namespace EVENTS
 

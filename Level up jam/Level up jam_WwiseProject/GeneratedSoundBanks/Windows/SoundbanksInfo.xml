@@ -334,7 +334,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="2982318527">
+		<SoundBank Id="3991942870" Language="SFX" Hash="3693654678">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
@@ -363,6 +363,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2481483955" Name="Play_WinSong" ObjectPath="\Events\Default Work Unit\Music\Play_WinSong" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1045266541" Language="SFX">
+							<ShortName>WinSong.wav</ShortName>
+							<Path>SFX\WinSong_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1334173279" Name="Play_Winter_Biom" ObjectPath="\Events\Default Work Unit\Music\Play_Winter_Biom" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="317452959" Language="SFX">
@@ -374,6 +382,7 @@
 				<Event Id="2527776833" Name="Stop_Desert_Boim" ObjectPath="\Events\Default Work Unit\Music\Stop_Desert_Boim" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4209206889" Name="Stop_Forest_Biom" ObjectPath="\Events\Default Work Unit\Music\Stop_Forest_Biom" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="774860123" Name="Stop_Main_Menu" ObjectPath="\Events\Default Work Unit\Music\Stop_Main_Menu" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2522867309" Name="Stop_WinSong" ObjectPath="\Events\Default Work Unit\Music\Stop_WinSong" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="511056921" Name="Stop_Winter_Biom" ObjectPath="\Events\Default Work Unit\Music\Stop_Winter_Biom" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>

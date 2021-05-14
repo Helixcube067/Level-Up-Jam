@@ -21,8 +21,10 @@
 						<ObjectRef Name="Play_Desert_Boim" ID="{EF14BBE6-7ED0-423F-9FED-65E25F2E9902}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Main_Menu" ID="{EB04883B-18A8-437D-B190-3B882A6975C9}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Forest_Biom" ID="{FC729AED-9D52-45B0-A8FF-A30A15FB759E}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_WinSong" ID="{5E4E1364-3010-471A-8C26-B589ED42FA24}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Winter_Biom" ID="{58C3AD85-E1D8-49BE-8C46-D3D7F9F730D0}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Desert_Boim" ID="{FEA0BA53-EC6E-4AAA-8583-B9E8594DE695}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_WinSong" ID="{4B0CF50D-0162-4B70-8B6D-7317E65A8C7D}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Forest_Biom" ID="{3FB3FB84-7D87-4CD8-87EF-E7B52FC302B9}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Main_Menu" ID="{AE3F2CCB-ECDA-4EE0-82B6-5EF22DCB9918}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
