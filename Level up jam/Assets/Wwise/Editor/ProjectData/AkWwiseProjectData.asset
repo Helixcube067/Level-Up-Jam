@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e105d2d10c5944baa40445b8fba662e
     GuidInternal: 
-    m_lastTime: -8585806007790383568
+    m_lastTime: -8585805962590727681
     List:
     - name: Button
       guid: 7a0cc16b83b5194b8adfde2dd1841afb
@@ -220,7 +220,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7fbcac2606e7fa4bb55587853f466049
     GuidInternal: 
-    m_lastTime: -8585806007790942076
+    m_lastTime: -8585805962599344644
     List:
     - name: Moving
       guid: cb374333898a8c4ea6691804e24c2df7
@@ -576,6 +576,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0.319478
       minDuration: 0.319478
+    - name: Play_WinSong
+      guid: 64134e5e10301a478c26b589ed42fa24
+      id: 2481483955
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
+      - ElementName: Play_WinSong
+        ObjectType: 3
+        guid: 64134e5e10301a478c26b589ed42fa24
+      Path: Events\Default Work Unit\Music\Play_WinSong
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Winter_Biom
       guid: 85adc358d8e1be498c46d3d7f9f730d0
       id: 1334173279
@@ -690,6 +710,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 3b8804eba8187d43b1903b882a6975c9
       Path: Events\Default Work Unit\Music\Stop_Main_Menu
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_WinSong
+      guid: 0df50c4b6201704b8b6d7317e65a8c7d
+      id: 2522867309
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: Music
+        ObjectType: 4
+        guid: e0884fd866b6f2488060c54f7378c243
+      - ElementName: Stop_WinSong
+        ObjectType: 3
+        guid: 0df50c4b6201704b8b6d7317e65a8c7d
+      Path: Events\Default Work Unit\Music\Stop_WinSong
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

@@ -48,8 +48,6 @@ public class SoundbankScript : MonoBehaviour
     // This function should also stop the current background music and transition
     public void PlayBackgroundSound(string biome)
     {
-        Debug.Log("stopping all background sounds");
-        Debug.Log("starting a new background sound");
         StopBackgroundSound();
         if (biome == "MainMenu")
         {
@@ -67,6 +65,10 @@ public class SoundbankScript : MonoBehaviour
         {
             PlayForestBiome();
         }
+        else if(biome == "Win")
+        {
+            PlayWinSong();
+        }
     }
 
     public void StopBackgroundSound()
@@ -75,6 +77,7 @@ public class SoundbankScript : MonoBehaviour
         StopMainMenu();
         StopDesertBiome();
         StopForestBiome();
+        StopWinSong();
     }
 
     // One time play sounds
@@ -136,7 +139,6 @@ public class SoundbankScript : MonoBehaviour
 
     public void PlayForestBiome()
     {
-        Debug.Log("play forest biome");
         AkSoundEngine.PostEvent("Play_Forest_Biom", gameObject);
     }
 
@@ -145,30 +147,38 @@ public class SoundbankScript : MonoBehaviour
         AkSoundEngine.PostEvent("Play_Winter_Biom", gameObject);
     }
 
+    public void PlayWinSong()
+    {
+        AkSoundEngine.PostEvent("Play_WinSong", gameObject);
+    }
+
     public void PlayDesertBiome()
     {
         AkSoundEngine.PostEvent("Play_Desert_Boim", gameObject);
     }
+
     public void StopMainMenu()
     {
-        Debug.Log("Stop Main Menu");
         AkSoundEngine.PostEvent("Stop_Main_Menu", gameObject);
     }
+
     public void StopForestBiome()
     {
-        Debug.Log("Stop forest");
         AkSoundEngine.PostEvent("Stop_Forest_Biom", gameObject);
+    }
+
+    public void StopWinSong()
+    {
+        AkSoundEngine.PostEvent("Stop_WinSong", gameObject);
     }
 
     public void StopWinterBiome()
     {
-        Debug.Log("Stop winter");
         AkSoundEngine.PostEvent("Stop_Winter_Biom", gameObject);
     }
 
     public void StopDesertBiome()
     {
-        Debug.Log("Stop desert");
         AkSoundEngine.PostEvent("Stop_Desert_Boim", gameObject);
     }
 }

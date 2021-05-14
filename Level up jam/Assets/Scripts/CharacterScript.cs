@@ -165,12 +165,12 @@ public class CharacterScript : MonoBehaviour
 
     void HandleHealth()
     {
-        //Temperature goes up in desert, down in snow, goes back to 36.
-        //Once below 30 you start losing health.
-        //Once above 42 you start losing health.
-        if (_BodyTemperature >= 42)
+        //Temperature goes up in desert, down in snow, goes back to 36 in forest.
+        //Once below 31 you start losing health.
+        //Once above 41 you start losing health.
+        if (_BodyTemperature >= 41)
             _health -= 3 * Time.deltaTime;
-        else if (_BodyTemperature <= 30)
+        else if (_BodyTemperature <= 31)
         { //made this -5 for testing health drain
             _health -= 3 * Time.deltaTime;
         }
@@ -192,6 +192,7 @@ public class CharacterScript : MonoBehaviour
             _HUD.gameObject.SetActive(false);
             _WinMenu.SetActive(true);
             Time.timeScale = 0f;
+            _Soundbank.PlayWinSong();
         }
     }
    
