@@ -312,6 +312,108 @@
 						<ActiveSource Name="joystick-trigger-button-press_gyyt5ied" ID="{E74C4B54-2B0C-4A8A-8709-4C18698F1DF3}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="EnemyDeath" ID="{049A0D34-E410-43F7-9F87-043715A02465}" ShortID="198777249">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{2573BD9E-927C-4033-9866-02D7307C7B7C}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Death of an enemie" ID="{55BFCBEB-43EF-40FF-A753-D31F95C45481}">
+							<Language>SFX</Language>
+							<AudioFile>Death of an enemie.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="960839302"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Death of an enemie" ID="{55BFCBEB-43EF-40FF-A753-D31F95C45481}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="PlayerDamage" ID="{CA169D50-E64C-4486-9E07-3A0737C6454D}" ShortID="460807262">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{A7312FBC-1437-4C6B-9F9F-47ED56B38B6B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="200"/>
+											<Property Name="Min" Type="Real64" Value="-200"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ouch" ID="{C1334ACC-55B4-483D-8347-68DFBF1A2B81}">
+							<Language>SFX</Language>
+							<AudioFile>Ouch.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="939710532"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Ouch" ID="{C1334ACC-55B4-483D-8347-68DFBF1A2B81}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="EnemyVoice" ID="{DBAE96C7-929B-496C-B701-92B79B751F04}" ShortID="125031314">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{017B2FF7-51F8-4104-A0DB-148D8238B910}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{013546CF-3FF4-4234-9D69-37EC368EC570}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Voice of an enemie" ID="{F8791999-6950-4964-A466-F997FE16C16A}">
+							<Language>SFX</Language>
+							<AudioFile>Voice of an enemie.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1060532068"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists/>
+					<ActiveSourceList>
+						<ActiveSource Name="Voice of an enemie" ID="{F8791999-6950-4964-A466-F997FE16C16A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

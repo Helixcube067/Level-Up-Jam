@@ -92,6 +92,16 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="EnemyAndPlayerSounds" ID="{BD676B9E-F2B2-494A-AE30-881CF1C69065}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_PlayerDamage" ID="{49929972-B032-4146-9305-5A70B154A935}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyVoice" ID="{612ED75E-ABB0-433E-BAC9-9C2FD35AC7F7}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_EnemyVoice" ID="{5E9D5796-8877-472F-BBC7-045AC2E630AE}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_EnemyDeath" ID="{35A60E7E-1E18-4870-87CD-02495DE3C012}" WorkUnitID="{26ACBC7F-E706-4BFA-B555-87853F466049}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

@@ -1,0 +1,11 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1014941850	Play_PlayerDamage			\Default Work Unit\SFX\Play_PlayerDamage	
+	3154146856	Play_EnemyDeath			\Default Work Unit\SFX\Play_EnemyDeath	
+	3813492516	Play_EnemyVoice			\Default Work Unit\SFX\Play_EnemyVoice	
+	3909318570	Stop_EnemyVoice			\Default Work Unit\SFX\Stop_EnemyVoice	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	939710532	PlayerDamage	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Ouch_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\PlayerDamage		80856
+	960839302	EnemyDeath	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Death of an enemie_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\EnemyDeath		176196
+	1060532068	EnemyVoice	C:\Users\Asus\Documents\GitHub\Level\Level\Level up jam\Level up jam_WwiseProject\.cache\Windows\SFX\Voice of an enemie_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\EnemyVoice		5517888
+

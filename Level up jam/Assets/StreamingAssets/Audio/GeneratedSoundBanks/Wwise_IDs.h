@@ -14,6 +14,8 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_DESERT_BOIM = 3351022179U;
+        static const AkUniqueID PLAY_ENEMYDEATH = 3154146856U;
+        static const AkUniqueID PLAY_ENEMYVOICE = 3813492516U;
         static const AkUniqueID PLAY_FOOTSTEPCONCRETE = 2860538893U;
         static const AkUniqueID PLAY_FOOTSTEPGRAVEL = 939773945U;
         static const AkUniqueID PLAY_FOOTSTEPS = 3854155799U;
@@ -27,11 +29,13 @@ namespace AK
         static const AkUniqueID PLAY_MAIN_MENU = 3306210749U;
         static const AkUniqueID PLAY_MONEY = 80633010U;
         static const AkUniqueID PLAY_MOVINGPLATFORM = 2603220653U;
+        static const AkUniqueID PLAY_PLAYERDAMAGE = 1014941850U;
         static const AkUniqueID PLAY_SLIDER = 1306435193U;
         static const AkUniqueID PLAY_SOUNDBUTTON = 2631470667U;
         static const AkUniqueID PLAY_WINSONG = 2481483955U;
         static const AkUniqueID PLAY_WINTER_BIOM = 1334173279U;
         static const AkUniqueID STOP_DESERT_BOIM = 2527776833U;
+        static const AkUniqueID STOP_ENEMYVOICE = 3909318570U;
         static const AkUniqueID STOP_FOREST_BIOM = 4209206889U;
         static const AkUniqueID STOP_MAIN_MENU = 774860123U;
         static const AkUniqueID STOP_WINSONG = 2522867309U;
@@ -64,6 +68,7 @@ namespace AK
         static const AkUniqueID INIT = 1355168291U;
         static const AkUniqueID BUTTON = 977454165U;
         static const AkUniqueID DESERTMUSIC = 1643119271U;
+        static const AkUniqueID ENEMYANDPLAYERSOUNDS = 2979567341U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID FORESTMUSIC = 2580311907U;
         static const AkUniqueID JUMP = 3833651337U;

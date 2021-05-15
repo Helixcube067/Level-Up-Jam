@@ -295,6 +295,53 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_EnemyDeath" ID="{35A60E7E-1E18-4870-87CD-02495DE3C012}">
+							<ChildrenList>
+								<Action Name="" ID="{AC24C60D-F155-483C-9742-AA979C127961}" ShortID="886565773">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EnemyDeath" ID="{049A0D34-E410-43F7-9F87-043715A02465}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_EnemyVoice" ID="{612ED75E-ABB0-433E-BAC9-9C2FD35AC7F7}">
+							<ChildrenList>
+								<Action Name="" ID="{D6BD9F48-16AB-4252-9199-0509F73305A4}" ShortID="337223218">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EnemyVoice" ID="{DBAE96C7-929B-496C-B701-92B79B751F04}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_EnemyVoice" ID="{5E9D5796-8877-472F-BBC7-045AC2E630AE}">
+							<ChildrenList>
+								<Action Name="" ID="{824D2FF9-DF30-40AD-BF32-5436EFF7C132}" ShortID="707569064">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="EnemyVoice" ID="{DBAE96C7-929B-496C-B701-92B79B751F04}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_PlayerDamage" ID="{49929972-B032-4146-9305-5A70B154A935}">
+							<ChildrenList>
+								<Action Name="" ID="{AC3CA29D-2ACF-4EED-98FD-86F90B8D1BF1}" ShortID="800607559">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerDamage" ID="{CA169D50-E64C-4486-9E07-3A0737C6454D}" WorkUnitID="{66DB7E5E-26A2-4A3B-BA3C-950C039833A5}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

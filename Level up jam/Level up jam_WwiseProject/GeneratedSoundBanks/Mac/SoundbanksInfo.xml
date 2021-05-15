@@ -287,6 +287,38 @@
 				<Event Id="4209206889" Name="Stop_Forest_Biom" ObjectPath="\Events\Default Work Unit\Music\Stop_Forest_Biom" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
+		<SoundBank Id="2979567341" Language="SFX" Hash="1934475373">
+			<ObjectPath>\SoundBanks\Default Work Unit\EnemyAndPlayerSounds</ObjectPath>
+			<ShortName>EnemyAndPlayerSounds</ShortName>
+			<Path>EnemyAndPlayerSounds.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3154146856" Name="Play_EnemyDeath" ObjectPath="\Events\Default Work Unit\SFX\Play_EnemyDeath" DurationType="OneShot" DurationMin="0.889545" DurationMax="1.120757">
+					<IncludedMemoryFiles>
+						<File Id="960839302" Language="SFX">
+							<ShortName>Death of an enemie.wav</ShortName>
+							<Path>SFX\Death of an enemie_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3813492516" Name="Play_EnemyVoice" ObjectPath="\Events\Default Work Unit\SFX\Play_EnemyVoice" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1060532068" Language="SFX">
+							<ShortName>Voice of an enemie.wav</ShortName>
+							<Path>SFX\Voice of an enemie_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1014941850" Name="Play_PlayerDamage" ObjectPath="\Events\Default Work Unit\SFX\Play_PlayerDamage" DurationType="OneShot" DurationMin="0.408036" DurationMax="0.514093">
+					<IncludedMemoryFiles>
+						<File Id="939710532" Language="SFX">
+							<ShortName>Ouch.wav</ShortName>
+							<Path>SFX\Ouch_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3909318570" Name="Stop_EnemyVoice" ObjectPath="\Events\Default Work Unit\SFX\Stop_EnemyVoice" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
 		<SoundBank Id="3072862491" Language="SFX" Hash="2292414951">
 			<ObjectPath>\SoundBanks\Default Work Unit\WinterMusic</ObjectPath>
 			<ShortName>WinterMusic</ShortName>
