@@ -9,13 +9,9 @@ public class ButtonScript : MonoBehaviour
     bool _IsPushed;
     private SoundbankScript _Soundbank;
 
-    void Start()
-    {
-        _Soundbank = GameObject.Find("SoundBank").GetComponent<SoundbankScript>();
-    }
-
     void Awake()
     {
+        _Soundbank = GameObject.Find("SoundBank").GetComponent<SoundbankScript>();
         _Animator.speed = 0;
     }
 

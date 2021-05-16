@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 3e105d2d10c5944baa40445b8fba662e
     GuidInternal: 
-    m_lastTime: -8585805962590727681
+    m_lastTime: -8585804414114525326
     List:
     - name: Button
       guid: 7a0cc16b83b5194b8adfde2dd1841afb
@@ -96,6 +96,20 @@ MonoBehaviour:
         ObjectType: 7
         guid: d1e6637bc1110c46acdb0603eb05dfb1
       Path: SoundBanks\Default Work Unit\DesertMusic
+    - name: EnemyAndPlayerSounds
+      guid: 9e6b67bdb2f24a49ae30881cf1c69065
+      id: 2979567341
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 3e105d2d10c5944baa40445b8fba662e
+      - ElementName: EnemyAndPlayerSounds
+        ObjectType: 7
+        guid: 9e6b67bdb2f24a49ae30881cf1c69065
+      Path: SoundBanks\Default Work Unit\EnemyAndPlayerSounds
     - name: Footsteps
       guid: eae95b0632f6d74b9429532c9e200807
       id: 2385628198
@@ -220,7 +234,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 7fbcac2606e7fa4bb55587853f466049
     GuidInternal: 
-    m_lastTime: -8585805962599344644
+    m_lastTime: -8585804414117771444
     List:
     - name: Moving
       guid: cb374333898a8c4ea6691804e24c2df7
@@ -273,6 +287,46 @@ MonoBehaviour:
         ObjectType: 3
         guid: e6bb14efd07e3f429fed65e25f2e9902
       Path: Events\Default Work Unit\Music\Play_Desert_Boim
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_EnemyDeath
+      guid: 7e0ea635181e704887cd02495de3c012
+      id: 3154146856
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 29626152557e714dad3937abc1c0c3d0
+      - ElementName: Play_EnemyDeath
+        ObjectType: 3
+        guid: 7e0ea635181e704887cd02495de3c012
+      Path: Events\Default Work Unit\SFX\Play_EnemyDeath
+      maxAttenuation: 0
+      maxDuration: 1.120757
+      minDuration: 0.889545
+    - name: Play_EnemyVoice
+      guid: 5ed72e61b0ab3e43bac99c2fd35ac7f7
+      id: 3813492516
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 29626152557e714dad3937abc1c0c3d0
+      - ElementName: Play_EnemyVoice
+        ObjectType: 3
+        guid: 5ed72e61b0ab3e43bac99c2fd35ac7f7
+      Path: Events\Default Work Unit\SFX\Play_EnemyVoice
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -536,6 +590,26 @@ MonoBehaviour:
       maxAttenuation: 15
       maxDuration: -1
       minDuration: -1
+    - name: Play_PlayerDamage
+      guid: 7299924932b0464193055a70b154a935
+      id: 1014941850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 29626152557e714dad3937abc1c0c3d0
+      - ElementName: Play_PlayerDamage
+        ObjectType: 3
+        guid: 7299924932b0464193055a70b154a935
+      Path: Events\Default Work Unit\SFX\Play_PlayerDamage
+      maxAttenuation: 0
+      maxDuration: 0.514093
+      minDuration: 0.408036
     - name: Play_Slider
       guid: 80fcfd4b39cc4940bcb54645fd517f20
       id: 1306435193
@@ -650,6 +724,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 53baa0fe6eecaa4a8583b9e8594de695
       Path: Events\Default Work Unit\Music\Stop_Desert_Boim
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_EnemyVoice
+      guid: 96579d5e77882f47bbc7045ac2e630ae
+      id: 3909318570
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7fbcac2606e7fa4bb55587853f466049
+      - ElementName: SFX
+        ObjectType: 4
+        guid: 29626152557e714dad3937abc1c0c3d0
+      - ElementName: Stop_EnemyVoice
+        ObjectType: 3
+        guid: 96579d5e77882f47bbc7045ac2e630ae
+      Path: Events\Default Work Unit\SFX\Stop_EnemyVoice
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0

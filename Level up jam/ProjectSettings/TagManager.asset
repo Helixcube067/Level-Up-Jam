@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platform
   - DamageObject
+  - Death
   layers:
   - Default
   - TransparentFX
@@ -48,6 +49,9 @@ TagManager:
     locked: 0
   - name: Floor
     uniqueID: 450527967
+    locked: 0
+  - name: Objects
+    uniqueID: 263103407
     locked: 0
   - name: Character
     uniqueID: 3441655537

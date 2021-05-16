@@ -32,6 +32,7 @@ public class CharacterScript : MonoBehaviour
     Slider _HealthSlider;
     Slider _TemperatureSlider;
     string _Biome;
+    Text _DebugText;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,7 @@ public class CharacterScript : MonoBehaviour
         _Soundbank = GameObject.Find("SoundBank").GetComponent<SoundbankScript>();
         _HealthSlider = GameObject.Find("HealthbarSlider").GetComponent<Slider>();
         _TemperatureSlider = GameObject.Find("TemperatureSlider").GetComponent<Slider>();
+        _DebugText = GameObject.Find("DebugText").GetComponent<Text>(); 
         _Biome = _InitialBiome;
     }
 
@@ -72,7 +74,11 @@ public class CharacterScript : MonoBehaviour
         // Horizontal Movement
         float HorizontalInput = Input.GetAxisRaw("Horizontal"); // Horizontal axis controlled by A and D
         _Animator.SetFloat("Speed", Mathf.Abs(HorizontalInput) * Convert.ToInt32(IsGrounded()));
-        float HorizontalMovement = HorizontalInput * _MovementSpeed * Time.deltaTime ; 
+        float HorizontalMovement = HorizontalInput * _MovementSpeed;
+        if(_DebugText)
+        {
+            _DebugText.text = HorizontalMovement.ToString();
+        }
         if ( (HorizontalInput > 0.1 || HorizontalInput < -0.1) && !_PlayingMovementSound)
         {
             if(IsGrounded())
